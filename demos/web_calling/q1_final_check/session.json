@@ -1,0 +1,198 @@
+{
+  "session_id": "q1_final_check",
+  "generated_at_utc": "2026-07-19T00:57:13.666717+00:00",
+  "turn_count": 1,
+  "turns": [
+    {
+      "turn_number": 1,
+      "generated_at_utc": "2026-07-19T00:57:13.665194+00:00",
+      "mode": "q1_lendingkart",
+      "response_register": null,
+      "customer": {
+        "transcript": "My small restaurant needs funds for vendor payments. What kind of business loan is this?",
+        "agent_query": "My small restaurant needs funds for vendor payments. What kind of business loan is this?",
+        "stt_provider": "browser_web_speech_api_or_typed_text",
+        "stt": null,
+        "stt_error": null,
+        "caller_audio": null
+      },
+      "agent": {
+        "spoken_text": "This is a business loan use case, often an MSME working capital need for stock, vendor payments, operations, or expansion. The final product and offer depend on eligibility and verification. Is there anything else you want to check about the loan?",
+        "action": "answer_question",
+        "retrieval_status": "answered",
+        "citations": [
+          {
+            "record_id": "kb_c8bced1ef853",
+            "label": "Lendingkart Types of Business Loans",
+            "url": "https://www.lendingkart.com/business-loans/types-of-business-loans/",
+            "source_id": "lendingkart_types_of_business_loans",
+            "evidence": "A Short term loan is also known as working capital loan and is meant to take care of the day to day operations of the business. This type of loan infuses liquidity into the business and helps in dealing with the shortage of cash or..."
+          },
+          {
+            "record_id": "kb_0eb4c543c897",
+            "label": "Lendingkart Term Loan",
+            "url": "https://www.lendingkart.com/business-loans/term-loan/",
+            "source_id": "lendingkart_term_loan",
+            "evidence": "Lendingkart offers a range of benefits that make it an attractive choice for businesses seeking financing options like business loans. With a superfast processing time of just 72 hours, Lendingkart provides quick access to funds without requiring collateral. The platform offers f"
+          }
+        ],
+        "audio_path": "C:\\Users\\dwive\\Documents\\Codex\\2026-07-17\\can-an\\work\\hdfc_kb_scraper\\demos\\web_calling\\q1_final_check\\turn_01_agent_response.wav",
+        "audio_url": "/audio/q1_final_check/turn_01_agent_response.wav",
+        "raw_response": {
+          "generated_at_utc": "2026-07-19T00:57:11.804334+00:00",
+          "session_id": "q1_final_check",
+          "agent": {
+            "brand_name": "Lendingkart",
+            "agent_name": "Asha",
+            "max_spoken_words": 70,
+            "cite_sources_in_voice": false,
+            "include_follow_up": true
+          },
+          "input": {
+            "caller_utterance_masked": "My small restaurant needs funds for vendor payments. What kind of business loan is this?",
+            "retrieval_query": "My small restaurant needs funds for vendor payments. What kind of business loan is this?",
+            "pii_masks": {}
+          },
+          "response": {
+            "spoken_text": "This is a business loan use case, often an MSME working capital need for stock, vendor payments, operations, or expansion. The final product and offer depend on eligibility and verification. Is there anything else you want to check about the loan?",
+            "action": "answer_question",
+            "retrieval_status": "answered",
+            "retrieval_reason": "sufficient_retrieval_confidence",
+            "human_escalation_required": false
+          },
+          "grounding": {
+            "citations": [
+              {
+                "record_id": "kb_c8bced1ef853",
+                "label": "Lendingkart Types of Business Loans",
+                "url": "https://www.lendingkart.com/business-loans/types-of-business-loans/",
+                "source_id": "lendingkart_types_of_business_loans",
+                "evidence": "A Short term loan is also known as working capital loan and is meant to take care of the day to day operations of the business. This type of loan infuses liquidity into the business and helps in dealing with the shortage of cash or..."
+              },
+              {
+                "record_id": "kb_0eb4c543c897",
+                "label": "Lendingkart Term Loan",
+                "url": "https://www.lendingkart.com/business-loans/term-loan/",
+                "source_id": "lendingkart_term_loan",
+                "evidence": "Lendingkart offers a range of benefits that make it an attractive choice for businesses seeking financing options like business loans. With a superfast processing time of just 72 hours, Lendingkart provides quick access to funds without requiring collateral. The platform offers f"
+              }
+            ],
+            "top_records": [
+              {
+                "record_id": "kb_d7ee0a6b7b07",
+                "score": 12.3316,
+                "score_parts": {
+                  "bm25": 10.6316,
+                  "keyword_overlap": 0.5,
+                  "category_boost": 0.0,
+                  "subcategory_boost": 0.0,
+                  "exact_phrase": 0.75,
+                  "special_intent": 0.0,
+                  "metadata_boost": 0.15,
+                  "source_type_boost": 0.0,
+                  "quality_boost": 0.3
+                },
+                "category": "repayment",
+                "sub_category": "missed_payment",
+                "source_id": "lendingkart_repayment_guide",
+                "source_type": "webpage",
+                "quality_status": "approved",
+                "warnings": []
+              },
+              {
+                "record_id": "kb_60b0c5860039",
+                "score": 10.4045,
+                "score_parts": {
+                  "bm25": 8.7045,
+                  "keyword_overlap": 0.5,
+                  "category_boost": 0.0,
+                  "subcategory_boost": 0.0,
+                  "exact_phrase": 0.75,
+                  "special_intent": 0.0,
+                  "metadata_boost": 0.15,
+                  "source_type_boost": 0.0,
+                  "quality_boost": 0.3
+                },
+                "category": "repayment",
+                "sub_category": "emi_calculation",
+                "source_id": "lendingkart_repayment_guide",
+                "source_type": "webpage",
+                "quality_status": "approved",
+                "warnings": []
+              },
+              {
+                "record_id": "kb_2513d8bca724",
+                "score": 9.5329,
+                "score_parts": {
+                  "bm25": 8.0829,
+                  "keyword_overlap": 0.25,
+                  "category_boost": 0.0,
+                  "subcategory_boost": 0.0,
+                  "exact_phrase": 0.75,
+                  "special_intent": 0.0,
+                  "metadata_boost": 0.15,
+                  "source_type_boost": 0.0,
+                  "quality_boost": 0.3
+                },
+                "category": "product_taxonomy",
+                "sub_category": "what_is_a_business_loan",
+                "source_id": "lendingkart_types_of_business_loans",
+                "source_type": "webpage",
+                "quality_status": "approved",
+                "warnings": []
+              },
+              {
+                "record_id": "kb_8bce823f62d1",
+                "score": 9.0646,
+                "score_parts": {
+                  "bm25": 7.5696,
+                  "keyword_overlap": 0.25,
+                  "category_boost": 0.0,
+                  "subcategory_boost": 0.0,
+                  "exact_phrase": 0.75,
+                  "special_intent": 0.0,
+                  "metadata_boost": 0.195,
+                  "source_type_boost": 0.0,
+                  "quality_boost": 0.3
+                },
+                "category": "eligibility",
+                "sub_category": "loan_amount",
+                "source_id": "lendingkart_eligibility_requirements",
+                "source_type": "webpage",
+                "quality_status": "approved",
+                "warnings": []
+              },
+              {
+                "record_id": "kb_06706c7b3602",
+                "score": 8.936,
+                "score_parts": {
+                  "bm25": 7.486,
+                  "keyword_overlap": 0.25,
+                  "category_boost": 0.0,
+                  "subcategory_boost": 0.0,
+                  "exact_phrase": 0.75,
+                  "special_intent": 0.0,
+                  "metadata_boost": 0.15,
+                  "source_type_boost": 0.0,
+                  "quality_boost": 0.3
+                },
+                "category": "repayment",
+                "sub_category": "loan_amount",
+                "source_id": "lendingkart_emi_calculator",
+                "source_type": "webpage",
+                "quality_status": "approved",
+                "warnings": []
+              }
+            ]
+          }
+        }
+      },
+      "latency_ms": {
+        "stt": 0.0,
+        "agent_response": 18.44,
+        "tts": 1860.799,
+        "end_to_end": 1880.083
+      }
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "all_three_good_conversations": 40,
+  "average_score": 0.948,
+  "category_quality_counts": {
+    "cooperative_customer": {
+      "good": 24
+    },
+    "human_assistance_request": {
+      "good": 24
+    },
+    "incomplete_or_conflicting_details": {
+      "good": 24
+    },
+    "objection": {
+      "good": 24
+    },
+    "out_of_scope_question": {
+      "good": 24
+    }
+  },
+  "conversation_count": 40,
+  "conversations_by_good_turn_count": {
+    "3": 40
+  },
+  "conversations_by_weak_turn_count": {
+    "0": 40
+  },
+  "conversations_with_any_weak": 0,
+  "dataset_path": "C:\\Users\\dwive\\Documents\\Codex\\2026-07-17\\can-an\\work\\hdfc_kb_scraper\\data\\evaluation\\q1_assessment_conversation_analysis_db.jsonl",
+  "expected_action_quality_counts": {
+    "answer_eligibility": {
+      "good": 23
+    },
+    "answer_fee_or_charge": {
+      "good": 10
+    },
+    "answer_question": {
+      "good": 25
+    },
+    "answer_repayment": {
+      "good": 11
+    },
+    "escalate_to_human": {
+      "good": 30
+    },
+    "guide_application": {
+      "good": 8
+    },
+    "warn_customer_safety": {
+      "good": 13
+    }
+  },
+  "generated_at_utc": "2026-07-19T00:54:07.042059+00:00",
+  "most_repeated_actual_responses": [
+    [
+      "I do not want to guess on this. I found some related information, but a human specialist should confirm it before we continue. I can arrange a callback or transfer.",
+      30
+    ],
+    [
+      "Please do not share OTPs, PAN, Aadhaar, UPI IDs, transaction IDs, bank details, or document numbers in this chat. Use only official secure channels for sensitive information. If anyone has asked you for upfront money, please do not pay and contact official support.",
+      7
+    ],
+    [
+      "I cannot confirm eligibility from incomplete or conflicting details. Please confirm the applicant business, business type, turnover, vintage, and matching documents before applying. Would you like me to list the documents usually needed?",
+      4
+    ],
+    [
+      "You can apply or review an offer, but accept only after checking the sanctioned amount, interest rate, processing fee, tenure, EMI, and agreement terms. Would you like me to explain the eligibility checks next?",
+      3
+    ],
+    [
+      "The KB mentions customised business-loan interest rates starting from 13.5% annually, subject to profile and final offer. Would you like me to also explain how this may affect the total repayment?",
+      3
+    ],
+    [
+      "Please use only official Lendingkart channels. Do not pay upfront money to unofficial callers, do not open suspicious links, and do not share OTPs or documents on random WhatsApp numbers. If anyone has asked you for upfront money, please do not pay and contact official support.",
+      3
+    ],
+    [
+      "Repayment depends on the sanctioned amount, interest rate, tenure, and loan agreement. For account-specific repayment options, official support should confirm the next step. Would you like me to explain the next safe step for repayment support?",
+      3
+    ],
+    [
+      "This is a business loan use case, often an MSME working capital need for stock, vendor payments, operations, or expansion. The final product and offer depend on eligibility and verification. Is there anything else you want to check about the loan?",
+      2
+    ],
+    [
+      "The KB lists business loan tenure as minimum 2 years. If that tenure is too long for a three-month need, review the offer carefully and compare alternatives before accepting. Is there anything else you want to check about the loan?",
+      2
+    ],
+    [
+      "Focus on accurate business records, complete documents, stable turnover, timely repayments, and a healthy credit profile. These can support eligibility, but approval is still subject to verification. Would you like me to list the documents usually needed?",
+      2
+    ]
+  ],
+  "quality_counts": {
+    "good": 120
+  },
+  "turn_count": 120,
+  "turn_quality_counts": {
+    "1": {
+      "good": 40
+    },
+    "2": {
+      "good": 40
+    },
+    "3": {
+      "good": 40
+    }
+  },
+  "unique_actual_response_count": 63,
+  "zero_good_conversations": 0
+}

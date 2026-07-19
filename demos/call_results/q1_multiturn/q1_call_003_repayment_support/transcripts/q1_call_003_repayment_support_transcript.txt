@@ -1,0 +1,15 @@
+Session: q1_call_003_repayment_support
+Name: Repayment and incomplete details
+Generated: 2026-07-18T10:02:36.467602+00:00
+
+Customer turn 1: What happens if I was in any payment
+Agent turn 1: Defaulting on your business loan repayment can result in legal action by the lender. The lender can file a lawsuit against you. If you default on a secured loan, the lender can seize the assets pledged as collateral. Would you like me to explain the next safe step for repayment support?
+Top source: Lendingkart Repayment Guide (https://www.lendingkart.com/blog/business-loan-repayment-guide/)
+
+Customer turn 2: I cannot cheer all details right now but want to know if I am eligible
+Agent turn 2: Lenders in India typically offer two types of business loan interest rates: fixed and floating. Understanding the difference helps you choose the right loan based on your repayment capacity and market conditions. Fixed Business Loan Interest Rate A fixed interest rate remains constant throughout the loan tenure. This means your EMI stays the same every month, making it easier to plan your cash flow and budget. Fixed rates are ideal. Would you like me to list the documents usually needed?
+Top source: Lendingkart Interest Rate and Charges (https://www.lendingkart.com/business-loans/interest-rate-charges/)
+
+Customer turn 3: Please connect me to a human representative
+Agent turn 3: I do not want to guess on this. I found some related information, but a human specialist should confirm it before we continue. I can arrange a callback or transfer.
+Top source: Lendingkart Loan Fraud Advisory (https://www.lendingkart.com/legal-compliance/loan-fraud-advisory/)

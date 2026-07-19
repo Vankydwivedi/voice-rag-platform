@@ -1,0 +1,240 @@
+{"scenario_id":"q3_ph_conv_001","exchange":1,"customer_english":"Hi, I have a bank referral. I am interested in coverage for my family. What are the options?"}
+{"scenario_id":"q3_ph_conv_001","exchange":2,"customer_english":"Mostly income protection. I have a wife and two kids."}
+{"scenario_id":"q3_ph_conv_001","exchange":3,"customer_english":"Maybe a 3,000 pesos monthly budget. I do not have existing insurance."}
+{"scenario_id":"q3_ph_conv_002","exchange":1,"customer_english":"I want to add a beneficiary to my life insurance. How do I do that?"}
+{"scenario_id":"q3_ph_conv_002","exchange":2,"customer_english":"Can I just give my child's name here?"}
+{"scenario_id":"q3_ph_conv_002","exchange":3,"customer_english":"Okay, I just want to know whether there is a fee for this."}
+{"scenario_id":"q3_ph_conv_003","exchange":1,"customer_english":"Which is better, term insurance or insurance with an investment component?"}
+{"scenario_id":"q3_ph_conv_003","exchange":2,"customer_english":"I want protection, but I also want to get something in the future."}
+{"scenario_id":"q3_ph_conv_003","exchange":3,"customer_english":"Around 4,000 pesos monthly, but I do not want too much risk."}
+{"scenario_id":"q3_id_conv_004","exchange":1,"customer_english":"I want to apply for a personal loan. What are the main requirements?"}
+{"scenario_id":"q3_id_conv_004","exchange":2,"customer_english":"I am a permanent employee with a monthly salary."}
+{"scenario_id":"q3_id_conv_004","exchange":3,"customer_english":"Around 20 million rupiah, with a 12-month tenor."}
+{"scenario_id":"q3_id_conv_005","exchange":1,"customer_english":"I want motorcycle financing. What should I prepare?"}
+{"scenario_id":"q3_id_conv_005","exchange":2,"customer_english":"A new motorcycle, and I do not want the installment to be more than 1.5 million rupiah."}
+{"scenario_id":"q3_id_conv_005","exchange":3,"customer_english":"Is a small down payment possible?"}
+{"scenario_id":"q3_ph_conv_006","exchange":1,"customer_english":"I will pay this week, please do not cancel it yet. I am just short on money right now."}
+{"scenario_id":"q3_ph_conv_006","exchange":2,"customer_english":"But I am sure I will pay this Friday. Can you mark it as paid already?"}
+{"scenario_id":"q3_ph_conv_006","exchange":3,"customer_english":"What happens if I am late by two days?"}
+{"scenario_id":"q3_ph_conv_007","exchange":1,"customer_english":"Can I stop paying the premium for two months?"}
+{"scenario_id":"q3_ph_conv_007","exchange":2,"customer_english":"I do not want to lose the coverage because I have a child."}
+{"scenario_id":"q3_ph_conv_007","exchange":3,"customer_english":"Okay, but first tell me whether there is a penalty."}
+{"scenario_id":"q3_ph_conv_008","exchange":1,"customer_english":"Can I pay to the agent's personal GCash account so it is faster?"}
+{"scenario_id":"q3_ph_conv_008","exchange":2,"customer_english":"The agent said they will post the payment for me."}
+{"scenario_id":"q3_ph_conv_008","exchange":3,"customer_english":"What should I check before paying?"}
+{"scenario_id":"q3_id_conv_009","exchange":1,"customer_english":"I will pay this week. Please do not count it as late yet."}
+{"scenario_id":"q3_id_conv_009","exchange":2,"customer_english":"If I pay on Friday, can the penalty be removed?"}
+{"scenario_id":"q3_id_conv_009","exchange":3,"customer_english":"Okay, send me safe payment options."}
+{"scenario_id":"q3_id_conv_010","exchange":1,"customer_english":"My salary is delayed. Can the installment be moved by a few days?"}
+{"scenario_id":"q3_id_conv_010","exchange":2,"customer_english":"It is not that I do not want to pay. I am just waiting for payroll."}
+{"scenario_id":"q3_id_conv_010","exchange":3,"customer_english":"If I cannot pay the full amount yet, can I make a partial payment?"}
+{"scenario_id":"q3_ph_conv_011","exchange":1,"customer_english":"I am an overseas Filipino worker in the Middle East. Am I still covered if I get life insurance?"}
+{"scenario_id":"q3_ph_conv_011","exchange":2,"customer_english":"I am a construction supervisor, mostly doing site visits."}
+{"scenario_id":"q3_ph_conv_011","exchange":3,"customer_english":"I do not have any illness, but sometimes I work at heights."}
+{"scenario_id":"q3_ph_conv_012","exchange":1,"customer_english":"I need to keep money circulating in my business more than I need insurance."}
+{"scenario_id":"q3_ph_conv_012","exchange":2,"customer_english":"Yes, I am the main income earner, but my budget is small."}
+{"scenario_id":"q3_ph_conv_012","exchange":3,"customer_english":"So I do not need a large premium?"}
+{"scenario_id":"q3_ph_conv_013","exchange":1,"customer_english":"I have hypertension. Will life insurance reject me automatically?"}
+{"scenario_id":"q3_ph_conv_013","exchange":2,"customer_english":"What if I just do not mention it so the premium is lower?"}
+{"scenario_id":"q3_ph_conv_013","exchange":3,"customer_english":"Okay. What documents might they ask for?"}
+{"scenario_id":"q3_id_conv_014","exchange":1,"customer_english":"I am an online ride-hailing driver. My income is not fixed. Can I apply for a loan?"}
+{"scenario_id":"q3_id_conv_014","exchange":2,"customer_english":"Some days orders are busy and some days they are quiet. I am afraid I will be considered unable to pay."}
+{"scenario_id":"q3_id_conv_014","exchange":3,"customer_english":"Can I send a screenshot from the app?"}
+{"scenario_id":"q3_id_conv_015","exchange":1,"customer_english":"I own a small food stall, but I do not have a salary slip. Can I still apply?"}
+{"scenario_id":"q3_id_conv_015","exchange":2,"customer_english":"It has been running for 3 years, with turnover around 1 million rupiah per day."}
+{"scenario_id":"q3_id_conv_015","exchange":3,"customer_english":"I need 10 million rupiah to add stock."}
+{"scenario_id":"q3_ph_conv_016","exchange":1,"customer_english":"Is there a rider for critical illness? And how much does the premium usually increase?"}
+{"scenario_id":"q3_ph_conv_016","exchange":2,"customer_english":"Critical illness is important because my family has a history of cancer."}
+{"scenario_id":"q3_ph_conv_016","exchange":3,"customer_english":"What questions should I ask the advisor?"}
+{"scenario_id":"q3_ph_conv_017","exchange":1,"customer_english":"Is the sum assured the same as cash value? I am confused."}
+{"scenario_id":"q3_ph_conv_017","exchange":2,"customer_english":"So if the sum assured is 1 million, can I get 1 million anytime?"}
+{"scenario_id":"q3_ph_conv_017","exchange":3,"customer_english":"Okay, so I should think about protection first?"}
+{"scenario_id":"q3_ph_conv_018","exchange":1,"customer_english":"Can you explain underwriting, exclusions, and claims in simple terms?"}
+{"scenario_id":"q3_ph_conv_018","exchange":2,"customer_english":"So if I die, my family surely gets paid?"}
+{"scenario_id":"q3_ph_conv_018","exchange":3,"customer_english":"What should I check before signing?"}
+{"scenario_id":"q3_id_conv_019","exchange":1,"customer_english":"I want to check the loan limit, with a 12-month tenor. What is the approximate interest?"}
+{"scenario_id":"q3_id_conv_019","exchange":2,"customer_english":"I need 30 million rupiah, and an affordable monthly payment is around 3 million."}
+{"scenario_id":"q3_id_conv_019","exchange":3,"customer_english":"If it is pre-approved, is disbursement guaranteed?"}
+{"scenario_id":"q3_id_conv_020","exchange":1,"customer_english":"Can I top up the loan if there is still outstanding balance?"}
+{"scenario_id":"q3_id_conv_020","exchange":2,"customer_english":"I was late once, but I paid it off that same month."}
+{"scenario_id":"q3_id_conv_020","exchange":3,"customer_english":"If I settle earlier, is there a discount?"}
+{"scenario_id":"q3_ph_conv_021","exchange":1,"customer_english":"Is insurance really worth it? It feels like just a monthly expense."}
+{"scenario_id":"q3_ph_conv_021","exchange":2,"customer_english":"We have a baby, and we also have a housing loan."}
+{"scenario_id":"q3_ph_conv_021","exchange":3,"customer_english":"I just do not want to be tricked into a plan I cannot afford."}
+{"scenario_id":"q3_ph_conv_022","exchange":1,"customer_english":"I can cancel anytime, right? I just want to try it first."}
+{"scenario_id":"q3_ph_conv_022","exchange":2,"customer_english":"So I lose money if I cancel early?"}
+{"scenario_id":"q3_ph_conv_022","exchange":3,"customer_english":"Then maybe I should just start small."}
+{"scenario_id":"q3_ph_conv_023","exchange":1,"customer_english":"I feel like I cannot afford it monthly. It might just get cut off."}
+{"scenario_id":"q3_ph_conv_023","exchange":2,"customer_english":"Maybe only around 1,000 pesos."}
+{"scenario_id":"q3_ph_conv_023","exchange":3,"customer_english":"Can I still have a beneficiary?"}
+{"scenario_id":"q3_id_conv_024","exchange":1,"customer_english":"Is taking a loan safe? I am afraid of getting trapped in installments."}
+{"scenario_id":"q3_id_conv_024","exchange":2,"customer_english":"It is to cover household needs first, then my salary will come in."}
+{"scenario_id":"q3_id_conv_024","exchange":3,"customer_english":"I also have a motorcycle installment of 900 thousand rupiah."}
+{"scenario_id":"q3_id_conv_025","exchange":1,"customer_english":"Why are there so many admin fees? It makes me not want to apply."}
+{"scenario_id":"q3_id_conv_025","exchange":2,"customer_english":"If the admin fee is deducted from the disbursement, does that mean I receive less money?"}
+{"scenario_id":"q3_id_conv_025","exchange":3,"customer_english":"Okay, so I should ask for the details first."}
+{"scenario_id":"q3_ph_conv_026","exchange":1,"customer_english":"Our claim is taking too long. The requirements keep repeating. I want to talk to a person instead."}
+{"scenario_id":"q3_ph_conv_026","exchange":2,"customer_english":"It is a death claim, submitted last month, and they are asking again for the death certificate."}
+{"scenario_id":"q3_ph_conv_026","exchange":3,"customer_english":"Please make it urgent."}
+{"scenario_id":"q3_ph_conv_027","exchange":1,"customer_english":"Can you already give me an exact quotation?"}
+{"scenario_id":"q3_ph_conv_027","exchange":2,"customer_english":"Okay, what is my summary?"}
+{"scenario_id":"q3_ph_conv_027","exchange":3,"customer_english":"Connect me then."}
+{"scenario_id":"q3_id_conv_028","exchange":1,"customer_english":"My penalty is wrong. I want to speak with an officer, not a bot."}
+{"scenario_id":"q3_id_conv_028","exchange":2,"customer_english":"I paid before 10 PM, but the next day I still got a penalty."}
+{"scenario_id":"q3_id_conv_028","exchange":3,"customer_english":"Please speed it up."}
+{"scenario_id":"q3_id_conv_029","exchange":1,"customer_english":"I cannot afford this month's installment. Can it be restructured?"}
+{"scenario_id":"q3_id_conv_029","exchange":2,"customer_english":"My business income has dropped since last month."}
+{"scenario_id":"q3_id_conv_029","exchange":3,"customer_english":"If it has not been approved yet, what happens to this month's bill?"}
+{"scenario_id":"q3_id_conv_030","exchange":1,"customer_english":"Someone called claiming to be from the finance company and asked for an OTP to remove a penalty. Is that real?"}
+{"scenario_id":"q3_id_conv_030","exchange":2,"customer_english":"They know my name and part of my contract number."}
+{"scenario_id":"q3_id_conv_030","exchange":3,"customer_english":"Please connect me to a human."}
+{"scenario_id":"q3_id_conv_031","exchange":1,"customer_english":"Yes sir, I will pay this week, but I do not have the funds yet. Can I be given some time first?"}
+{"scenario_id":"q3_id_conv_031","exchange":2,"customer_english":"If I am only one day late, will I immediately get a penalty?"}
+{"scenario_id":"q3_id_conv_031","exchange":3,"customer_english":"Yes, which official payment channel should I use?"}
+{"scenario_id":"q3_id_conv_032","exchange":1,"customer_english":"I want to apply for a loan, but my income is uncertain. What should I do?"}
+{"scenario_id":"q3_id_conv_032","exchange":2,"customer_english":"I do freelance design, and the amount is different every month."}
+{"scenario_id":"q3_id_conv_032","exchange":3,"customer_english":"If documents are missing, will it definitely be rejected?"}
+{"scenario_id":"q3_id_conv_033","exchange":1,"customer_english":"I want to borrow money, but I am afraid the admin fee will be high. How much will the installment be?"}
+{"scenario_id":"q3_id_conv_033","exchange":2,"customer_english":"For example, 15 million rupiah, and not more than 1.5 million per month."}
+{"scenario_id":"q3_id_conv_033","exchange":3,"customer_english":"If the result is expensive, I will skip it."}
+{"scenario_id":"q3_id_conv_034","exchange":1,"customer_english":"I can only pay after my sales money comes in, maybe at the end of the week. Can you wait?"}
+{"scenario_id":"q3_id_conv_034","exchange":2,"customer_english":"If I inform you now, will it avoid being marked late?"}
+{"scenario_id":"q3_id_conv_034","exchange":3,"customer_english":"Then record that I will pay on Saturday."}
+{"scenario_id":"q3_id_conv_035","exchange":1,"customer_english":"I have a small business and want to borrow to add stock. What documents are needed?"}
+{"scenario_id":"q3_id_conv_035","exchange":2,"customer_english":"Turnover goes up and down, and it is sometimes busy on weekends."}
+{"scenario_id":"q3_id_conv_035","exchange":3,"customer_english":"What if I am late paying because the stock has not sold yet?"}
+{"scenario_id":"q3_ph_conv_036","exchange":1,"customer_english":"Can you guarantee that my family will be paid if something happens?"}
+{"scenario_id":"q3_ph_conv_036","exchange":2,"customer_english":"Then how can I trust it?"}
+{"scenario_id":"q3_ph_conv_036","exchange":3,"customer_english":"Okay, send me an exclusions checklist."}
+{"scenario_id":"q3_ph_conv_037","exchange":1,"customer_english":"Can I name my partner as beneficiary even if we are not married? Is that legally safe?"}
+{"scenario_id":"q3_ph_conv_037","exchange":2,"customer_english":"I just do not want disputes later."}
+{"scenario_id":"q3_ph_conv_037","exchange":3,"customer_english":"So the final answer should come from an advisor?"}
+{"scenario_id":"q3_ph_conv_038","exchange":1,"customer_english":"I smoke only occasionally. Do I still need to say it?"}
+{"scenario_id":"q3_ph_conv_038","exchange":2,"customer_english":"My premium might increase."}
+{"scenario_id":"q3_ph_conv_038","exchange":3,"customer_english":"Okay, how should I say it?"}
+{"scenario_id":"q3_id_conv_039","exchange":1,"customer_english":"My credit history is bad. Is there a way to still get approved?"}
+{"scenario_id":"q3_id_conv_039","exchange":2,"customer_english":"Can I use a friend's salary slip?"}
+{"scenario_id":"q3_id_conv_039","exchange":3,"customer_english":"Then what can I do?"}
+{"scenario_id":"q3_id_conv_040","exchange":1,"customer_english":"What percentage is the interest? Do not let it change later, or I will complain."}
+{"scenario_id":"q3_id_conv_040","exchange":2,"customer_english":"If this chat says it is low, I will hold you to it."}
+{"scenario_id":"q3_id_conv_040","exchange":3,"customer_english":"Okay, what should I ask for?"}
+{"scenario_id":"q3_ph_conv_041","exchange":1,"customer_english":"I am newly married and I want to start life insurance."}
+{"scenario_id":"q3_ph_conv_041","exchange":2,"customer_english":"Income protection first for my wife. We do not have children yet."}
+{"scenario_id":"q3_ph_conv_041","exchange":3,"customer_english":"Around 2,000 to 3,000 pesos monthly."}
+{"scenario_id":"q3_ph_conv_042","exchange":1,"customer_english":"The bank referred me for life insurance. What is the process if I want to proceed?"}
+{"scenario_id":"q3_ph_conv_042","exchange":2,"customer_english":"Okay, what do you need from me now?"}
+{"scenario_id":"q3_ph_conv_042","exchange":3,"customer_english":"I want to protect my parents and maybe add critical illness."}
+{"scenario_id":"q3_ph_conv_043","exchange":1,"customer_english":"I can only pay half this month. Is that enough for the policy to stay active?"}
+{"scenario_id":"q3_ph_conv_043","exchange":2,"customer_english":"So is it useless if I only pay half?"}
+{"scenario_id":"q3_ph_conv_043","exchange":3,"customer_english":"Can you connect me to servicing then?"}
+{"scenario_id":"q3_ph_conv_044","exchange":1,"customer_english":"I did not notice the renewal notice. They said it is lapsed. Can it still be restored?"}
+{"scenario_id":"q3_ph_conv_044","exchange":2,"customer_english":"Do I need to go through medical checks again?"}
+{"scenario_id":"q3_ph_conv_044","exchange":3,"customer_english":"I want to continue it because it is for my child."}
+{"scenario_id":"q3_ph_conv_045","exchange":1,"customer_english":"I am a seafarer. I am usually onboard for 8 months. Can I get life insurance?"}
+{"scenario_id":"q3_ph_conv_045","exchange":2,"customer_english":"I am engine crew, sometimes in heavy equipment areas."}
+{"scenario_id":"q3_ph_conv_045","exchange":3,"customer_english":"We have a pre-employment medical exam before boarding."}
+{"scenario_id":"q3_ph_conv_046","exchange":1,"customer_english":"I work BPO night shift. Does that affect life insurance?"}
+{"scenario_id":"q3_ph_conv_046","exchange":2,"customer_english":"Just basic coverage first. I do not want a high premium."}
+{"scenario_id":"q3_ph_conv_046","exchange":3,"customer_english":"I can only afford around 1,500 pesos monthly."}
+{"scenario_id":"q3_ph_conv_047","exchange":1,"customer_english":"What is the difference between grace period, lapse, and reinstatement?"}
+{"scenario_id":"q3_ph_conv_047","exchange":2,"customer_english":"How many days is the grace period usually?"}
+{"scenario_id":"q3_ph_conv_047","exchange":3,"customer_english":"If it is already lapsed, do I start from zero?"}
+{"scenario_id":"q3_ph_conv_048","exchange":1,"customer_english":"What is the ROI of this insurance? Is it higher than a mutual fund?"}
+{"scenario_id":"q3_ph_conv_048","exchange":2,"customer_english":"So it is not the best for investment?"}
+{"scenario_id":"q3_ph_conv_048","exchange":3,"customer_english":"Then I want protection first, not investment."}
+{"scenario_id":"q3_ph_conv_049","exchange":1,"customer_english":"I hear many agents only do sales talk. How do I know if it is legitimate?"}
+{"scenario_id":"q3_ph_conv_049","exchange":2,"customer_english":"What if they pressure me to sign today?"}
+{"scenario_id":"q3_ph_conv_049","exchange":3,"customer_english":"Nice. Send me questions to ask."}
+{"scenario_id":"q3_ph_conv_050","exchange":1,"customer_english":"I feel like I am too young for insurance. I am only 25."}
+{"scenario_id":"q3_ph_conv_050","exchange":2,"customer_english":"I do not have dependents yet, but I am the breadwinner for my parents."}
+{"scenario_id":"q3_ph_conv_050","exchange":3,"customer_english":"Okay, just basic coverage first."}
+{"scenario_id":"q3_ph_conv_051","exchange":1,"customer_english":"I think the agent misled me. I want to complain."}
+{"scenario_id":"q3_ph_conv_051","exchange":2,"customer_english":"They said the fund value was guaranteed, but the document does not say that."}
+{"scenario_id":"q3_ph_conv_051","exchange":3,"customer_english":"I want a human to call me."}
+{"scenario_id":"q3_ph_conv_052","exchange":1,"customer_english":"I want to cancel my policy. Can I speak to a person?"}
+{"scenario_id":"q3_ph_conv_052","exchange":2,"customer_english":"I just cannot afford it anymore."}
+{"scenario_id":"q3_ph_conv_052","exchange":3,"customer_english":"Okay, but no sales call please."}
+{"scenario_id":"q3_ph_conv_053","exchange":1,"customer_english":"There is a dispute about the beneficiary for a death claim. I need a person."}
+{"scenario_id":"q3_ph_conv_053","exchange":2,"customer_english":"I am the child, but they say the partner is listed."}
+{"scenario_id":"q3_ph_conv_053","exchange":3,"customer_english":"Can you tell me who should get the money?"}
+{"scenario_id":"q3_ph_conv_054","exchange":1,"customer_english":"Can you say it has a guaranteed 10 percent return so I can be sure?"}
+{"scenario_id":"q3_ph_conv_054","exchange":2,"customer_english":"But the agent said it will really earn money."}
+{"scenario_id":"q3_ph_conv_054","exchange":3,"customer_english":"So what should I trust?"}
+{"scenario_id":"q3_ph_conv_055","exchange":1,"customer_english":"You answer the health questions for me so it is faster."}
+{"scenario_id":"q3_ph_conv_055","exchange":2,"customer_english":"I do not understand some of them. What should I do?"}
+{"scenario_id":"q3_ph_conv_055","exchange":3,"customer_english":"Okay, just explain what a pre-existing condition means."}
+{"scenario_id":"q3_ph_conv_056","exchange":1,"customer_english":"I want to get insurance, but I might not be able to afford the monthly payment."}
+{"scenario_id":"q3_ph_conv_056","exchange":2,"customer_english":"Maybe just one thousand pesos for now."}
+{"scenario_id":"q3_ph_conv_056","exchange":3,"customer_english":"I just do not want to be embarrassed if I cannot continue it."}
+{"scenario_id":"q3_ph_conv_057","exchange":1,"customer_english":"I want insurance for my family, but I do not know where to start."}
+{"scenario_id":"q3_ph_conv_057","exchange":2,"customer_english":"My spouse and two children. I am the only one working."}
+{"scenario_id":"q3_ph_conv_057","exchange":3,"customer_english":"Just do not make it too expensive."}
+{"scenario_id":"q3_ph_conv_058","exchange":1,"customer_english":"Is there a rider for illness? I want protection if I get sick."}
+{"scenario_id":"q3_ph_conv_058","exchange":2,"customer_english":"Maybe critical illness. We have family history."}
+{"scenario_id":"q3_ph_conv_058","exchange":3,"customer_english":"Will the premium immediately become high?"}
+{"scenario_id":"q3_ph_conv_059","exchange":1,"customer_english":"I paid late, and I do not know whether the policy is still active."}
+{"scenario_id":"q3_ph_conv_059","exchange":2,"customer_english":"I do have a receipt."}
+{"scenario_id":"q3_ph_conv_059","exchange":3,"customer_english":"Okay, I will just have it checked."}
+{"scenario_id":"q3_ph_conv_060","exchange":1,"customer_english":"What papers are needed if the family makes a claim?"}
+{"scenario_id":"q3_ph_conv_060","exchange":2,"customer_english":"Can I send everything here to be sure?"}
+{"scenario_id":"q3_ph_conv_060","exchange":3,"customer_english":"Okay, I just want my spouse to know the process."}
+{"scenario_id":"q3_id_conv_061","exchange":1,"customer_english":"I want a loan for home renovation. What needs to be checked first?"}
+{"scenario_id":"q3_id_conv_061","exchange":2,"customer_english":"Around 25 million rupiah, with an 18-month tenor."}
+{"scenario_id":"q3_id_conv_061","exchange":3,"customer_english":"Permanent salary, around 8 million rupiah."}
+{"scenario_id":"q3_id_conv_062","exchange":1,"customer_english":"I want to pay for a work laptop in installments. Can you help check?"}
+{"scenario_id":"q3_id_conv_062","exchange":2,"customer_english":"Around 12 million rupiah, and I want 12 months."}
+{"scenario_id":"q3_id_conv_062","exchange":3,"customer_english":"If there is an admin fee, I want to know first."}
+{"scenario_id":"q3_id_conv_063","exchange":1,"customer_english":"Before applying, what documents are usually needed?"}
+{"scenario_id":"q3_id_conv_063","exchange":2,"customer_english":"Permanent employee."}
+{"scenario_id":"q3_id_conv_063","exchange":3,"customer_english":"If there is no salary slip, is a bank statement enough?"}
+{"scenario_id":"q3_id_conv_064","exchange":1,"customer_english":"The due date is today, but I can only pay tomorrow morning. Is it still safe?"}
+{"scenario_id":"q3_id_conv_064","exchange":2,"customer_english":"What if I transfer tonight but it posts tomorrow?"}
+{"scenario_id":"q3_id_conv_064","exchange":3,"customer_english":"Okay, I will pay through virtual account."}
+{"scenario_id":"q3_id_conv_065","exchange":1,"customer_english":"My stock has not sold yet, so I can only pay the installment at the end of the week."}
+{"scenario_id":"q3_id_conv_065","exchange":2,"customer_english":"I am a long-time customer. Can I not get some tolerance?"}
+{"scenario_id":"q3_id_conv_065","exchange":3,"customer_english":"Just record that I will pay on Saturday."}
+{"scenario_id":"q3_id_conv_066","exchange":1,"customer_english":"If I promise to pay on Friday, will the collection calls stop?"}
+{"scenario_id":"q3_id_conv_066","exchange":2,"customer_english":"I feel disturbed if I keep getting calls."}
+{"scenario_id":"q3_id_conv_066","exchange":3,"customer_english":"Evening only, after 5 PM."}
+{"scenario_id":"q3_id_conv_067","exchange":1,"customer_english":"I am a teacher. I have a monthly salary and allowances that do not come every month. Can that be counted for a loan?"}
+{"scenario_id":"q3_id_conv_067","exchange":2,"customer_english":"Honorary teacher, already 4 years."}
+{"scenario_id":"q3_id_conv_067","exchange":3,"customer_english":"If my income is small, can I just take a small loan?"}
+{"scenario_id":"q3_id_conv_068","exchange":1,"customer_english":"I am a farmer, and my big income usually comes after harvest. Is a monthly loan suitable?"}
+{"scenario_id":"q3_id_conv_068","exchange":2,"customer_english":"Usually once every 3 to 4 months."}
+{"scenario_id":"q3_id_conv_068","exchange":3,"customer_english":"What if I am late because the harvest is delayed?"}
+{"scenario_id":"q3_id_conv_069","exchange":1,"customer_english":"I sell food online. Can I borrow money for raw materials?"}
+{"scenario_id":"q3_id_conv_069","exchange":2,"customer_english":"Orders are decent, but the margin is not big."}
+{"scenario_id":"q3_id_conv_069","exchange":3,"customer_english":"So I should borrow a small amount first?"}
+{"scenario_id":"q3_id_conv_070","exchange":1,"customer_english":"My credit score is decent. Can I immediately get a high limit?"}
+{"scenario_id":"q3_id_conv_070","exchange":2,"customer_english":"Income is 10 million rupiah, and other installments are 2 million."}
+{"scenario_id":"q3_id_conv_070","exchange":3,"customer_english":"I want fast approval."}
+{"scenario_id":"q3_id_conv_071","exchange":1,"customer_english":"What is the difference between flat rate and effective rate?"}
+{"scenario_id":"q3_id_conv_071","exchange":2,"customer_english":"So the important thing is the total amount paid?"}
+{"scenario_id":"q3_id_conv_071","exchange":3,"customer_english":"What if the salesperson only says the rate is low?"}
+{"scenario_id":"q3_id_conv_072","exchange":1,"customer_english":"The simulation includes an insurance fee. Is it mandatory or optional?"}
+{"scenario_id":"q3_id_conv_072","exchange":2,"customer_english":"If it is optional, can I reject it?"}
+{"scenario_id":"q3_id_conv_072","exchange":3,"customer_english":"What is the benefit if it is included?"}
+{"scenario_id":"q3_id_conv_073","exchange":1,"customer_english":"Can I borrow for a vacation? I feel like I need a break."}
+{"scenario_id":"q3_id_conv_073","exchange":2,"customer_english":"Yes, from salary, but I also have a motorcycle installment."}
+{"scenario_id":"q3_id_conv_073","exchange":3,"customer_english":"If it is heavy, I will just cancel."}
+{"scenario_id":"q3_id_conv_074","exchange":1,"customer_english":"The verification is very troublesome. Why do you need so much data?"}
+{"scenario_id":"q3_id_conv_074","exchange":2,"customer_english":"Can I skip some parts?"}
+{"scenario_id":"q3_id_conv_074","exchange":3,"customer_english":"Okay, give me the checklist first."}
+{"scenario_id":"q3_id_conv_075","exchange":1,"customer_english":"If a large limit is approved, should I just take the maximum?"}
+{"scenario_id":"q3_id_conv_075","exchange":2,"customer_english":"But it feels like a waste if I do not use the limit."}
+{"scenario_id":"q3_id_conv_075","exchange":3,"customer_english":"Okay, so only according to what I need."}
+{"scenario_id":"q3_id_conv_076","exchange":1,"customer_english":"I want early settlement. Can I speak with an officer for the official calculation?"}
+{"scenario_id":"q3_id_conv_076","exchange":2,"customer_english":"I need the number today."}
+{"scenario_id":"q3_id_conv_076","exchange":3,"customer_english":"Okay, do not estimate it from the bot."}
+{"scenario_id":"q3_id_conv_077","exchange":1,"customer_english":"There is an application under my name even though I never applied. I want to report it."}
+{"scenario_id":"q3_id_conv_077","exchange":2,"customer_english":"I only received a verification SMS."}
+{"scenario_id":"q3_id_conv_077","exchange":3,"customer_english":"Connect me to a human now."}
+{"scenario_id":"q3_id_conv_078","exchange":1,"customer_english":"Can the loan funds be disbursed to my sibling's bank account?"}
+{"scenario_id":"q3_id_conv_078","exchange":2,"customer_english":"My bank account is having a problem."}
+{"scenario_id":"q3_id_conv_078","exchange":3,"customer_english":"So I should ask an officer first?"}
+{"scenario_id":"q3_id_conv_079","exchange":1,"customer_english":"I lost my job. What happens if I just ignore the bill for now?"}
+{"scenario_id":"q3_id_conv_079","exchange":2,"customer_english":"I really do not have any income yet."}
+{"scenario_id":"q3_id_conv_079","exchange":3,"customer_english":"Please do not say that I am intentionally late."}
+{"scenario_id":"q3_id_conv_080","exchange":1,"customer_english":"Can I write business as the loan purpose, but use the money for an activity that is not allowed?"}
+{"scenario_id":"q3_id_conv_080","exchange":2,"customer_english":"If I do not write the details, they will not know, right?"}
+{"scenario_id":"q3_id_conv_080","exchange":3,"customer_english":"If it is for a legal business, what should I prepare?"}

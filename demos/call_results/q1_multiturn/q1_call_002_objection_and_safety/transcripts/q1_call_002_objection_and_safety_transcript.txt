@@ -1,0 +1,15 @@
+Session: q1_call_002_objection_and_safety
+Name: Objection with fraud-safety question
+Generated: 2026-07-18T10:02:22.180499+00:00
+
+Customer turn 1: The interest in charges sound expensive
+Agent turn 1: Type: Legal charges; Unsecured Business Loan interest rate and Charges: At actuals.; Unsecured Personal Loan interest rate and Charges: At actuals. Would you like me to also explain how this may affect the total repayment?
+Top source: Lendingkart Schedule of Charges (https://www.lendingkart.com/legal-compliance/schedule-of-charges/)
+
+Customer turn 2: Someone claiming to be from lending card asked me to pay money before disbursal
+Agent turn 2: We have come across instances where fraudsters are duping customers by claiming to be representatives of Lendingkart Finance Limited and also at times by using fake websites. Please beware of fraudsters while conducting your financial transactions - duly verify the authenticity of all communications (calls, emails, SMS, websites or advertisements) before making any payment or sharing any documents. Please be careful while opening links or attachments from unknown third parties. If anyone has asked you for upfront money, please do not pay and contact official support.
+Top source: Lendingkart Loan Fraud Advisory (https://www.lendingkart.com/legal-compliance/loan-fraud-advisory/)
+
+Customer turn 3: Can a human adviser Callie later to confirm this
+Agent turn 3: I do not want to guess on this. I found some related information, but a human specialist should confirm it before we continue. I can arrange a callback or transfer.
+Top source: Lendingkart EMI Calculator (https://www.lendingkart.com/business-loan-emi-calculator/)

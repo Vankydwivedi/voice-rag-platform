@@ -1,0 +1,6 @@
+{"id":"ph_001","utterance":"Hi po, I got a bank referral and I'm interested in coverage for my family. Pwede malaman options?","expected_action":"qualify_life_insurance_lead","expected_register":"taglish","expected_code_switching":true,"expected_regional_accent":false}
+{"id":"ph_002","utterance":"Mahal po yung premium, wala akong budget ngayon.","expected_action":"handle_sector_objection","expected_register":"taglish","expected_code_switching":true,"expected_regional_accent":false}
+{"id":"ph_003","utterance":"What happens if my policy will lapse? I can pay the premium next week.","expected_action":"handle_renewal_or_premium","expected_register":"taglish","expected_code_switching":false,"expected_regional_accent":false}
+{"id":"ph_004","utterance":"Pwede bang idagdag yung asawa ko as beneficiary and add a rider?","expected_action":"qualify_life_insurance_lead","expected_register":"taglish","expected_code_switching":true,"expected_regional_accent":false}
+{"id":"ph_005","utterance":"Busy po ako ngayon, tawag ulit mamaya please.","expected_action":"schedule_callback","expected_register":"taglish","expected_code_switching":true,"expected_regional_accent":false}
+{"id":"ph_006","utterance":"Can I talk to a human advisor instead?","expected_action":"escalate_to_human","expected_register":"taglish","expected_code_switching":false,"expected_regional_accent":false}

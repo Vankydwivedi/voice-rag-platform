@@ -1,0 +1,15 @@
+Session: q1_call_001_cooperative
+Name: Cooperative business-loan inquiry
+Generated: 2026-07-18T10:02:09.945891+00:00
+
+Customer turn 1: II want to apply for lending card business loan online
+Agent turn 1: Bank statement (last 12 months) Business registration proof Company PAN card copy Would you like me to explain the eligibility checks next?
+Top source: Lendingkart Business Loan Overview (https://www.lendingkart.com/business-loans/)
+
+Customer turn 2: What documents do I usually need for the loan application
+Agent turn 2: Sign your loan agreement 24 hours send us the signed agreement along with your kyc documents Is there anything else you want to check about the loan?
+Top source: Lendingkart Check Eligibility (https://www.lendingkart.com/business-loan/check-eligibility)
+
+Customer turn 3: What processing fee will I need to pay
+Agent turn 3: Type: Cooling-off period*; Unsecured Business Loan interest rate and Charges: Up to 2% of the sanction amount (a portion of processing fee) can be retained in case the customer decides to exit the loan in cooling-off period i.e., within 3 days from the day of disbursal; Unsecured Personal Loan interest rate and Charges: NA Would you like me to also explain how this may affect the total repayment?
+Top source: Lendingkart Schedule of Charges (https://www.lendingkart.com/legal-compliance/schedule-of-charges/)

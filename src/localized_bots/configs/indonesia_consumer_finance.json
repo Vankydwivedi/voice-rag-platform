@@ -1,0 +1,101 @@
+{
+  "market_id": "indonesia_consumer_finance",
+  "country": "Indonesia",
+  "sector": "multifinance_consumer_finance",
+  "use_case": "installment_reminder_and_payment_support",
+  "bot_name": "Rani",
+  "languages_supported": [
+    "Formal Bahasa Indonesia",
+    "Colloquial Bahasa Indonesia",
+    "Bahasa Indonesia with finance English loanwords",
+    "Javanese-influenced Indonesian"
+  ],
+  "asr_config": {
+    "provider": "transcript_file",
+    "model": "transcript_file_v0",
+    "language_tests": [
+      "id-ID formal",
+      "id-ID colloquial",
+      "id-ID with finance loanwords",
+      "Javanese-influenced Indonesian transcript"
+    ],
+    "regional_accent_focus": "Javanese-influenced Indonesian using markers such as nggih, mboten, matur nuwun, kulo, nopo.",
+    "notes": "Offline transcript-file ASR is used for deterministic assessment runs. Production should use Indonesian ASR tested with regional accents outside Jakarta."
+  },
+  "tts_config": {
+    "provider": "windows_sapi",
+    "preferred_voice": "Indonesian voice if installed",
+    "compromise": "Windows SAPI may fall back to the default installed voice; response text and WAV are still generated for demo evidence."
+  },
+  "terminology": {
+    "cicilan": ["cicilan", "angsuran", "installment"],
+    "tenor": ["tenor", "jangka waktu"],
+    "denda": ["denda", "late fee"],
+    "dp": ["DP", "down payment", "uang muka"],
+    "jatuh_tempo": ["jatuh tempo", "due date"],
+    "angsuran": ["angsuran", "cicilan bulanan"],
+    "pembiayaan": ["pembiayaan", "finance", "consumer finance"]
+  },
+  "language_markers": {
+    "formal_id": ["bapak", "ibu", "mohon", "pembayaran", "jatuh tempo", "pembiayaan"],
+    "colloquial_id": ["aku", "nggak", "gak", "udah", "telat", "banget"],
+    "loanwords": ["installment", "late fee", "due date", "top up", "reschedule", "collection", "dp", "tenor"],
+    "regional_javanese_id": ["nggih", "nggeh", "mboten", "matur nuwun", "kulo", "nopo", "sampeyan"]
+  },
+  "intent_keywords": {
+    "installment_reminder": ["cicilan", "angsuran", "jatuh tempo", "due date", "bayar", "pembayaran"],
+    "payment_difficulty": ["belum bisa", "sulit", "gak bisa bayar", "nggak bisa bayar", "mboten bisa", "reschedule", "keringanan", "telat"],
+    "penalty_question": ["denda", "late fee", "telat", "terlambat"],
+    "qualification_followup": ["dp", "tenor", "pembiayaan", "apply", "pengajuan", "dokumen"],
+    "human_escalation": ["agent", "cs", "manusia", "petugas", "supervisor", "collection officer"]
+  },
+  "responses": {
+    "installment_reminder": {
+      "formal_id": "Baik Bapak/Ibu. Cicilan atau angsuran perlu dibayarkan sebelum tanggal jatuh tempo agar tidak muncul denda keterlambatan.",
+      "colloquial_id": "Baik, cicilannya perlu dibayar sebelum jatuh tempo ya, supaya tidak kena denda.",
+      "regional_javanese_id": "Nggih Bapak/Ibu, angsuran perlu dibayar sebelum jatuh tempo supaya mboten kena denda keterlambatan."
+    },
+    "payment_difficulty": {
+      "formal_id": "Saya mengerti. Saya bisa catat kendala pembayaran dan bantu arahkan ke opsi bantuan atau jadwal callback dari tim terkait.",
+      "colloquial_id": "Saya paham. Kalau lagi belum bisa bayar, saya bisa bantu catat kendalanya dan ajukan callback untuk opsi bantuan.",
+      "regional_javanese_id": "Nggih, saya paham. Kalau sedang belum bisa bayar, saya bantu catat kendalanya dan ajukan callback dari tim terkait."
+    },
+    "penalty_question": {
+      "formal_id": "Jika pembayaran melewati jatuh tempo, denda dapat berlaku sesuai ketentuan pembiayaan. Saya bisa bantu cek kanal pembayaran agar tidak terlambat.",
+      "colloquial_id": "Kalau lewat jatuh tempo, biasanya bisa kena denda sesuai aturan pembiayaan. Saya bisa bantu arahkan cara bayarnya.",
+      "regional_javanese_id": "Nggih, kalau lewat jatuh tempo bisa ada denda sesuai ketentuan pembiayaan. Saya bantu arahkan cara bayarnya."
+    },
+    "qualification_followup": {
+      "formal_id": "Untuk pengajuan pembiayaan, biasanya perlu informasi DP, tenor yang diinginkan, data kendaraan atau barang, dan dokumen identitas.",
+      "colloquial_id": "Untuk pengajuan, biasanya dicek DP, tenor, barang atau kendaraan yang mau dibiayai, dan dokumen identitas.",
+      "regional_javanese_id": "Nggih, untuk pengajuan pembiayaan biasanya dicek DP, tenor, barang yang dibiayai, dan dokumen identitas."
+    },
+    "human_escalation": {
+      "formal_id": "Baik, saya akan arahkan ke petugas agar pertanyaan Bapak/Ibu ditangani langsung.",
+      "colloquial_id": "Baik, saya bantu arahkan ke petugas ya supaya bisa ditangani langsung.",
+      "regional_javanese_id": "Nggih, saya bantu arahkan ke petugas supaya bisa ditangani langsung."
+    },
+    "fallback": {
+      "formal_id": "Maaf, saya tidak ingin memberi informasi yang tidak pasti. Saya bisa bantu soal cicilan, tenor, denda, DP, jatuh tempo, angsuran, atau pembiayaan.",
+      "colloquial_id": "Maaf ya, saya tidak mau asal jawab. Saya bisa bantu soal cicilan, tenor, denda, DP, jatuh tempo, angsuran, atau pembiayaan.",
+      "regional_javanese_id": "Nggih, mohon maaf. Saya tidak mau asal jawab. Saya bisa bantu soal angsuran, tenor, denda, DP, jatuh tempo, atau pembiayaan."
+    }
+  },
+  "localization_examples": [
+    {
+      "literal_translation": "Your installment is due tomorrow.",
+      "localized": "Cicilan Bapak jatuh tempo besok, mohon dibayar sebelum tanggal jatuh tempo agar tidak kena denda.",
+      "why": "Uses natural Indonesian finance terms: cicilan, jatuh tempo, denda."
+    },
+    {
+      "literal_translation": "Your down payment affects the loan tenure.",
+      "localized": "DP dan tenor akan mempengaruhi simulasi pembiayaan, jadi kita cek dulu nominal dan jangka waktunya.",
+      "why": "Keeps common finance loanwords DP and tenor instead of forcing formal equivalents."
+    },
+    {
+      "literal_translation": "I understand you cannot pay now.",
+      "localized": "Nggih, saya paham kalau saat ini belum bisa bayar. Saya bantu catat kendalanya dulu.",
+      "why": "Uses a respectful Javanese-influenced marker while keeping the answer understandable in Indonesian."
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "session_id": "q3_id_final_check",
+  "generated_at_utc": "2026-07-19T01:06:01.379479+00:00",
+  "turn_count": 1,
+  "turns": [
+    {
+      "turn_number": 1,
+      "generated_at_utc": "2026-07-19T01:06:01.377813+00:00",
+      "mode": "q3_indonesia",
+      "response_register": "formal_id",
+      "customer": {
+        "transcript": "Saya mau ajukan pembiayaan motor, DP kecil bisa?",
+        "agent_query": "Saya mau ajukan pembiayaan motor, DP kecil bisa?",
+        "stt_provider": "browser_web_speech_api_or_typed_text",
+        "stt": null,
+        "stt_error": null,
+        "caller_audio": null
+      },
+      "agent": {
+        "spoken_text": "Untuk pengajuan pembiayaan, biasanya perlu informasi DP, tenor, data barang atau kendaraan, dokumen identitas, dan kemampuan membayar.",
+        "action": "handle_finance_qualification",
+        "retrieval_status": "q3_safety_template",
+        "citations": [
+          {
+            "record_id": "q3_id_finance_qualification",
+            "label": "ID finance qualification KB",
+            "url": "",
+            "source_id": "q3_indonesia_component_script_pack",
+            "evidence": "For financing qualification, collect DP, tenor, item or vehicle information, and identity documents. Keep common finance loanwords such as DP and tenor.",
+            "market_id": "indonesia_consumer_finance",
+            "score": 3
+          },
+          {
+            "record_id": "q3_id_penalty_explanation",
+            "label": "ID penalty and late fee KB",
+            "url": "",
+            "source_id": "q3_indonesia_component_script_pack",
+            "evidence": "Explain that late payment after jatuh tempo may trigger denda according to financing terms, and guide the customer to payment channels or support.",
+            "market_id": "indonesia_consumer_finance",
+            "score": 1
+          },
+          {
+            "record_id": "q3_id_escalation",
+            "label": "ID human escalation KB",
+            "url": "",
+            "source_id": "q3_indonesia_component_script_pack",
+            "evidence": "For human escalation or uncertain questions, route to a petugas or CS and stay in the customer's Indonesian register.",
+            "market_id": "indonesia_consumer_finance",
+            "score": 1
+          }
+        ],
+        "audio_path": "C:\\Users\\dwive\\Documents\\Codex\\2026-07-17\\can-an\\work\\hdfc_kb_scraper\\demos\\web_calling\\q3_id_final_check\\turn_01_agent_response.wav",
+        "audio_url": "/audio/q3_id_final_check/turn_01_agent_response.wav",
+        "raw_response": {
+          "localized_response": {
+            "market_id": "indonesia_consumer_finance",
+            "utterance": "Saya mau ajukan pembiayaan motor, DP kecil bisa?",
+            "detected_language": "formal_bahasa_indonesia",
+            "response_register": "formal_id",
+            "code_switching_detected": true,
+            "regional_accent_detected": false,
+            "intent": "q3_template_id_finance_qualification",
+            "action": "handle_finance_qualification",
+            "response_text": "Untuk pengajuan pembiayaan, biasanya perlu informasi DP, tenor, data barang atau kendaraan, dokumen identitas, dan kemampuan membayar.",
+            "terms_detected": [
+              "dp",
+              "pembiayaan",
+              "tenor"
+            ],
+            "fallback_used": false,
+            "metadata": {
+              "marker_counts": {
+                "formal_id": 1,
+                "colloquial_id": 0,
+                "loanwords": 1,
+                "regional_javanese_id": 0
+              },
+              "asr_config": {
+                "provider": "transcript_file",
+                "model": "transcript_file_v0",
+                "language_tests": [
+                  "id-ID formal",
+                  "id-ID colloquial",
+                  "id-ID with finance loanwords",
+                  "Javanese-influenced Indonesian transcript"
+                ],
+                "regional_accent_focus": "Javanese-influenced Indonesian using markers such as nggih, mboten, matur nuwun, kulo, nopo.",
+                "notes": "Offline transcript-file ASR is used for deterministic assessment runs. Production should use Indonesian ASR tested with regional accents outside Jakarta."
+              },
+              "tts_config": {
+                "provider": "windows_sapi",
+                "preferred_voice": "Indonesian voice if installed",
+                "compromise": "Windows SAPI may fall back to the default installed voice; response text and WAV are still generated for demo evidence."
+              },
+              "sector": "multifinance_consumer_finance",
+              "use_case": "installment_reminder_and_payment_support",
+              "detected_register": "formal_id",
+              "requested_response_register": null,
+              "default_response_register": null,
+              "response_register_overrides": {},
+              "q3_template_match": {
+                "intent": "q3_template_id_finance_qualification",
+                "market_id": "indonesia_consumer_finance",
+                "register": "formal_id",
+                "reason": "high_precision_paraphrase_or_safety_boundary"
+              }
+            }
+          },
+          "citations": [
+            {
+              "record_id": "q3_id_finance_qualification",
+              "label": "ID finance qualification KB",
+              "url": "",
+              "source_id": "q3_indonesia_component_script_pack",
+              "evidence": "For financing qualification, collect DP, tenor, item or vehicle information, and identity documents. Keep common finance loanwords such as DP and tenor.",
+              "market_id": "indonesia_consumer_finance",
+              "score": 3
+            },
+            {
+              "record_id": "q3_id_penalty_explanation",
+              "label": "ID penalty and late fee KB",
+              "url": "",
+              "source_id": "q3_indonesia_component_script_pack",
+              "evidence": "Explain that late payment after jatuh tempo may trigger denda according to financing terms, and guide the customer to payment channels or support.",
+              "market_id": "indonesia_consumer_finance",
+              "score": 1
+            },
+            {
+              "record_id": "q3_id_escalation",
+              "label": "ID human escalation KB",
+              "url": "",
+              "source_id": "q3_indonesia_component_script_pack",
+              "evidence": "For human escalation or uncertain questions, route to a petugas or CS and stay in the customer's Indonesian register.",
+              "market_id": "indonesia_consumer_finance",
+              "score": 1
+            }
+          ],
+          "retrieval_status": "q3_safety_template",
+          "component": {
+            "component_id": "q3_indonesia_consumer_finance",
+            "market_id": "indonesia_consumer_finance",
+            "kb_record_count": 5,
+            "action_kb_record_count": 120,
+            "requested_response_register": "auto",
+            "selected_action_record_id": null
+          }
+        }
+      },
+      "latency_ms": {
+        "stt": 0.0,
+        "agent_response": 1.908,
+        "tts": 960.483,
+        "end_to_end": 963.001
+      }
+    }
+  ]
+}

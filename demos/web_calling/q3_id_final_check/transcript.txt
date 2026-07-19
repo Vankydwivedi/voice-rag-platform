@@ -1,0 +1,6 @@
+Session: q3_id_final_check
+Turns: 1
+
+Customer 1: Saya mau ajukan pembiayaan motor, DP kecil bisa?
+Agent 1: Untuk pengajuan pembiayaan, biasanya perlu informasi DP, tenor, data barang atau kendaraan, dokumen identitas, dan kemampuan membayar.
+Top source: ID finance qualification KB ()

@@ -1,0 +1,1959 @@
+{
+  "generated_at_utc": "2026-07-18T10:02:36.473249+00:00",
+  "system": "q1_multiturn_voice_call_session",
+  "scenario_count": 3,
+  "pass_count": 3,
+  "pass_rate": 1.0,
+  "providers": {
+    "stt": "windows_sapi",
+    "caller_audio_synthesis": "windows_sapi",
+    "agent_tts": "windows_sapi"
+  },
+  "call_results": [
+    {
+      "generated_at_utc": "2026-07-18T10:02:09.945891+00:00",
+      "session_id": "q1_call_001_cooperative",
+      "name": "Cooperative business-loan inquiry",
+      "coverage": [
+        "cooperative_customer",
+        "grounded_answers",
+        "follow_up"
+      ],
+      "project_root": "C:\\Users\\dwive\\OneDrive\\Desktop\\New folder (6)",
+      "providers": {
+        "stt": "windows_sapi",
+        "caller_audio_synthesis": "windows_sapi",
+        "agent_tts": "windows_sapi"
+      },
+      "turn_count": 3,
+      "pass_count": 3,
+      "pass_rate": 1.0,
+      "session_state": {
+        "session_id": "q1_call_001_cooperative",
+        "turn_count": 3,
+        "actions": [
+          "guide_application",
+          "answer_question",
+          "answer_fee_or_charge"
+        ],
+        "topics": [
+          "product_overview/entity_type",
+          "application_process/documents_required",
+          "fees_and_charges/processing_fee"
+        ],
+        "human_escalation_required": false,
+        "callback_requested": false
+      },
+      "transcript_text_path": "C:\\Users\\dwive\\Documents\\Codex\\2026-07-17\\can-an\\work\\hdfc_kb_scraper\\demos\\call_results\\q1_multiturn\\q1_call_001_cooperative\\transcripts\\q1_call_001_cooperative_transcript.txt",
+      "turns": [
+        {
+          "turn_index": 1,
+          "caller_script_text": "Hi, I want to apply for a Lendingkart business loan online.",
+          "caller_audio": {
+            "audio_path": "C:\\Users\\dwive\\Documents\\Codex\\2026-07-17\\can-an\\work\\hdfc_kb_scraper\\demos\\call_results\\q1_multiturn\\q1_call_001_cooperative\\caller_audio\\turn_01_customer.wav",
+            "provider": "windows_sapi",
+            "status": "ok",
+            "text_path": "C:\\Users\\dwive\\Documents\\Codex\\2026-07-17\\can-an\\work\\hdfc_kb_scraper\\demos\\call_results\\q1_multiturn\\q1_call_001_cooperative\\caller_audio\\turn_01_customer.txt",
+            "metadata": {
+              "engine": "System.Speech.Synthesis.SpeechSynthesizer"
+            }
+          },
+          "stt": {
+            "transcript": "II want to apply for lending card business loan online",
+            "provider": "windows_sapi",
+            "confidence": 0.719459236,
+            "language": "en-US",
+            "metadata": {
+              "audio_path": "C:\\Users\\dwive\\Documents\\Codex\\2026-07-17\\can-an\\work\\hdfc_kb_scraper\\demos\\call_results\\q1_multiturn\\q1_call_001_cooperative\\caller_audio\\turn_01_customer.wav",
+              "status": "ok",
+              "recognizer_name": "MS-1033-80-DESK",
+              "recognizer_description": "Microsoft Speech Recognizer 8.0 for Windows (English - US)",
+              "alternates": [
+                {
+                  "text": "II want to apply for lending card business loan online",
+                  "confidence": 0.719459236
+                },
+                {
+                  "text": "I I want to apply for lending card business loan online",
+                  "confidence": 0.719459236
+                },
+                {
+                  "text": "I like I want to apply for lending card business loan online",
+                  "confidence": 0.7562768
+                },
+                {
+                  "text": "I I want to apply for lending card business loan on line",
+                  "confidence": 0.713624835
+                },
+                {
+                  "text": "hi I want to apply for lending card business loan online",
+                  "confidence": 0.740434647
+                }
+              ]
+            }
+          },
+          "agent_query": "II want to apply for lending card business loan online",
+          "agent_response": {
+            "generated_at_utc": "2026-07-18T10:01:57.780368+00:00",
+            "session_id": "q1_call_001_cooperative",
+            "agent": {
+              "brand_name": "Lendingkart",
+              "agent_name": "Asha",
+              "max_spoken_words": 70,
+              "cite_sources_in_voice": false,
+              "include_follow_up": true
+            },
+            "input": {
+              "caller_utterance_masked": "II want to apply for lending card business loan online",
+              "retrieval_query": "II want to apply for lending card business loan online",
+              "pii_masks": {}
+            },
+            "response": {
+              "spoken_text": "Bank statement (last 12 months) Business registration proof Company PAN card copy Would you like me to explain the eligibility checks next?",
+              "action": "guide_application",
+              "retrieval_status": "answered",
+              "retrieval_reason": "sufficient_retrieval_confidence",
+              "human_escalation_required": false
+            },
+            "grounding": {
+              "citations": [
+                {
+                  "record_id": "kb_c3beb1874eac",
+                  "label": "Lendingkart Business Loan Overview",
+                  "url": "https://www.lendingkart.com/business-loans/",
+                  "source_id": "lendingkart_business_loan_overview",
+                  "evidence": "Bank statement (last 12 months)\nBusiness registration proof\nCompany PAN card copy"
+                }
+              ],
+              "top_records": [
+                {
+                  "record_id": "kb_c3beb1874eac",
+                  "score": 13.3497,
+                  "score_parts": {
+                    "bm25": 11.4047,
+                    "keyword_overlap": 0.25,
+                    "category_boost": 0.45,
+                    "subcategory_boost": 0.0,
+                    "exact_phrase": 0.75,
+                    "special_intent": 0.0,
+                    "metadata_boost": 0.195,
+                    "source_type_boost": 0.0,
+                    "quality_boost": 0.3
+                  },
+                  "category": "product_overview",
+                  "sub_category": "entity_type",
+                  "source_id": "lendingkart_business_loan_overview",
+                  "source_type": "webpage",
+                  "quality_status": "approved",
+                  "warnings": []
+                },
+                {
+                  "record_id": "kb_86edac819f30",
+                  "score": 11.9988,
+                  "score_parts": {
+                    "bm25": 10.0538,
+                    "keyword_overlap": 0.25,
+                    "category_boost": 0.45,
+                    "subcategory_boost": 0.0,
+                    "exact_phrase": 0.75,
+                    "special_intent": 0.0,
+                    "metadata_boost": 0.195,
+                    "source_type_boost": 0.0,
+                    "quality_boost": 0.3
+                  },
+                  "category": "product_overview",
+                  "sub_category": "co_lending_partners",
+                  "source_id": "lendingkart_business_loan_overview",
+                  "source_type": "webpage",
+                  "quality_status": "approved",
+                  "warnings": []
+                },
+                {
+                  "record_id": "kb_b41bc5e65726",
+                  "score": 11.1559,
+                  "score_parts": {
+                    "bm25": 9.6609,
+                    "keyword_overlap": 0.25,
+                    "category_boost": 0.0,
+                    "subcategory_boost": 0.0,
+                    "exact_phrase": 0.75,
+                    "special_intent": 0.0,
+                    "metadata_boost": 0.195,
+                    "source_type_boost": 0.0,
+                    "quality_boost": 0.3
+                  },
+                  "category": "fees_and_charges",
+                  "sub_category": "interest_rate",
+                  "source_id": "lendingkart_interest_rate_charges",
+                  "source_type": "webpage",
+                  "quality_status": "approved",
+                  "warnings": []
+                },
+                {
+                  "record_id": "kb_f91b898ac579",
+                  "score": 10.5598,
+                  "score_parts": {
+                    "bm25": 9.1098,
+                    "keyword_overlap": 0.25,
+                    "category_boost": 0.0,
+                    "subcategory_boost": 0.0,
+                    "exact_phrase": 0.75,
+                    "special_intent": 0.0,
+                    "metadata_boost": 0.15,
+                    "source_type_boost": 0.0,
+                    "quality_boost": 0.3
+                  },
+                  "category": "credit_score",
+                  "sub_category": "cibil_score",
+                  "source_id": "lendingkart_cibil_business_loan",
+                  "source_type": "webpage",
+                  "quality_status": "approved",
+                  "warnings": []
+                },
+                {
+                  "record_id": "kb_2026128fc771",
+                  "score": 10.0864,
+                  "score_parts": {
+                    "bm25": 7.7414,
+                    "keyword_overlap": 0.5,
+                    "category_boost": 0.9,
+                    "subcategory_boost": 0.0,
+                    "exact_phrase": 0.75,
+                    "special_intent": 0.0,
+                    "metadata_boost": 0.195,
+                    "source_type_boost": 0.0,
+                    "quality_boost": 0.0
+                  },
+                  "category": "application_process",
+                  "sub_category": "documents_required",
+                  "source_id": "lendingkart_faq_application_online",
+                  "source_type": "webpage",
+                  "quality_status": "approved_with_warning",
+                  "warnings": [
+                    "thin_cleaned_text_after_noise_removal"
+                  ]
+                }
+              ]
+            }
+          },
+          "tts": {
+            "audio_path": "C:\\Users\\dwive\\Documents\\Codex\\2026-07-17\\can-an\\work\\hdfc_kb_scraper\\demos\\call_results\\q1_multiturn\\q1_call_001_cooperative\\agent_audio\\turn_01_agent_response.wav",
+            "provider": "windows_sapi",
+            "status": "ok",
+            "text_path": "C:\\Users\\dwive\\Documents\\Codex\\2026-07-17\\can-an\\work\\hdfc_kb_scraper\\demos\\call_results\\q1_multiturn\\q1_call_001_cooperative\\agent_audio\\turn_01_agent_response.txt",
+            "metadata": {
+              "engine": "System.Speech.Synthesis.SpeechSynthesizer"
+            }
+          },
+          "expected_action": "guide_application",
+          "actual_action": "guide_application",
+          "turn_pass": true
+        },
+        {
+          "turn_index": 2,
+          "caller_script_text": "What documents do I usually need for the loan application?",
+          "caller_audio": {
+            "audio_path": "C:\\Users\\dwive\\Documents\\Codex\\2026-07-17\\can-an\\work\\hdfc_kb_scraper\\demos\\call_results\\q1_multiturn\\q1_call_001_cooperative\\caller_audio\\turn_02_customer.wav",
+            "provider": "windows_sapi",
+            "status": "ok",
+            "text_path": "C:\\Users\\dwive\\Documents\\Codex\\2026-07-17\\can-an\\work\\hdfc_kb_scraper\\demos\\call_results\\q1_multiturn\\q1_call_001_cooperative\\caller_audio\\turn_02_customer.txt",
+            "metadata": {
+              "engine": "System.Speech.Synthesis.SpeechSynthesizer"
+            }
+          },
+          "stt": {
+            "transcript": "What documents do I usually need for the loan application",
+            "provider": "windows_sapi",
+            "confidence": 0.695485234,
+            "language": "en-US",
+            "metadata": {
+              "audio_path": "C:\\Users\\dwive\\Documents\\Codex\\2026-07-17\\can-an\\work\\hdfc_kb_scraper\\demos\\call_results\\q1_multiturn\\q1_call_001_cooperative\\caller_audio\\turn_02_customer.wav",
+              "status": "ok",
+              "recognizer_name": "MS-1033-80-DESK",
+              "recognizer_description": "Microsoft Speech Recognizer 8.0 for Windows (English - US)",
+              "alternates": [
+                {
+                  "text": "What documents do I usually need for the loan application",
+                  "confidence": 0.695485234
+                },
+                {
+                  "text": "what documents do I usually need for the loan application",
+                  "confidence": 0.695485234
+                },
+                {
+                  "text": "what documents to why usually need for the loan application",
+                  "confidence": 0.6550222
+                },
+                {
+                  "text": "what documents still I usually need for the loan application",
+                  "confidence": 0.645208538
+                },
+                {
+                  "text": "what documents to lie usually need for the loan application",
+                  "confidence": 0.65720886
+                }
+              ]
+            }
+          },
+          "agent_query": "What documents do I usually need for the loan application",
+          "agent_response": {
+            "generated_at_utc": "2026-07-18T10:02:03.811011+00:00",
+            "session_id": "q1_call_001_cooperative",
+            "agent": {
+              "brand_name": "Lendingkart",
+              "agent_name": "Asha",
+              "max_spoken_words": 70,
+              "cite_sources_in_voice": false,
+              "include_follow_up": true
+            },
+            "input": {
+              "caller_utterance_masked": "What documents do I usually need for the loan application",
+              "retrieval_query": "What documents do I usually need for the loan application",
+              "pii_masks": {}
+            },
+            "response": {
+              "spoken_text": "Sign your loan agreement 24 hours send us the signed agreement along with your kyc documents Is there anything else you want to check about the loan?",
+              "action": "answer_question",
+              "retrieval_status": "answered",
+              "retrieval_reason": "sufficient_retrieval_confidence",
+              "human_escalation_required": false
+            },
+            "grounding": {
+              "citations": [
+                {
+                  "record_id": "kb_4ffc65378626",
+                  "label": "Lendingkart Check Eligibility",
+                  "url": "https://www.lendingkart.com/business-loan/check-eligibility",
+                  "source_id": "lendingkart_check_eligibility_form",
+                  "evidence": "Sign your loan agreement 24 hours send us the signed agreement along with your kyc documents"
+                }
+              ],
+              "top_records": [
+                {
+                  "record_id": "kb_4ffc65378626",
+                  "score": 10.7563,
+                  "score_parts": {
+                    "bm25": 4.0613,
+                    "keyword_overlap": 0.25,
+                    "category_boost": 0.45,
+                    "subcategory_boost": 0.5,
+                    "exact_phrase": 0.0,
+                    "special_intent": 5.0,
+                    "metadata_boost": 0.195,
+                    "source_type_boost": 0.0,
+                    "quality_boost": 0.3
+                  },
+                  "category": "application_process",
+                  "sub_category": "documents_required",
+                  "source_id": "lendingkart_check_eligibility_form",
+                  "source_type": "webpage",
+                  "quality_status": "approved",
+                  "warnings": []
+                },
+                {
+                  "record_id": "kb_b4ec4184422e",
+                  "score": 10.695,
+                  "score_parts": {
+                    "bm25": 4.3,
+                    "keyword_overlap": 0.25,
+                    "category_boost": 0.45,
+                    "subcategory_boost": 0.5,
+                    "exact_phrase": 0.0,
+                    "special_intent": 5.0,
+                    "metadata_boost": 0.195,
+                    "source_type_boost": 0.0,
+                    "quality_boost": 0.0
+                  },
+                  "category": "documents",
+                  "sub_category": "documents_required",
+                  "source_id": "lendingkart_faq_documents_unsecured",
+                  "source_type": "webpage",
+                  "quality_status": "approved_with_warning",
+                  "warnings": [
+                    "thin_cleaned_text_after_noise_removal"
+                  ]
+                },
+                {
+                  "record_id": "kb_cba83be463c2",
+                  "score": 10.3371,
+                  "score_parts": {
+                    "bm25": 4.0921,
+                    "keyword_overlap": 0.25,
+                    "category_boost": 0.0,
+                    "subcategory_boost": 0.5,
+                    "exact_phrase": 0.0,
+                    "special_intent": 5.0,
+                    "metadata_boost": 0.195,
+                    "source_type_boost": 0.0,
+                    "quality_boost": 0.3
+                  },
+                  "category": "eligibility",
+                  "sub_category": "documents_required",
+                  "source_id": "lendingkart_eligibility_requirements",
+                  "source_type": "webpage",
+                  "quality_status": "approved",
+                  "warnings": []
+                },
+                {
+                  "record_id": "kb_dfa5dba5fb50",
+                  "score": 9.3142,
+                  "score_parts": {
+                    "bm25": 8.6142,
+                    "keyword_overlap": 0.25,
+                    "category_boost": 0.0,
+                    "subcategory_boost": 0.0,
+                    "exact_phrase": 0.0,
+                    "special_intent": 0.0,
+                    "metadata_boost": 0.15,
+                    "source_type_boost": 0.0,
+                    "quality_boost": 0.3
+                  },
+                  "category": "product_variant",
+                  "sub_category": "interest_rate",
+                  "source_id": "lendingkart_term_loan",
+                  "source_type": "webpage",
+                  "quality_status": "approved",
+                  "warnings": []
+                },
+                {
+                  "record_id": "kb_8bce823f62d1",
+                  "score": 9.0751,
+                  "score_parts": {
+                    "bm25": 7.0801,
+                    "keyword_overlap": 0.5,
+                    "category_boost": 0.0,
+                    "subcategory_boost": 0.0,
+                    "exact_phrase": 0.0,
+                    "special_intent": 1.0,
+                    "metadata_boost": 0.195,
+                    "source_type_boost": 0.0,
+                    "quality_boost": 0.3
+                  },
+                  "category": "eligibility",
+                  "sub_category": "loan_amount",
+                  "source_id": "lendingkart_eligibility_requirements",
+                  "source_type": "webpage",
+                  "quality_status": "approved",
+                  "warnings": []
+                }
+              ]
+            }
+          },
+          "tts": {
+            "audio_path": "C:\\Users\\dwive\\Documents\\Codex\\2026-07-17\\can-an\\work\\hdfc_kb_scraper\\demos\\call_results\\q1_multiturn\\q1_call_001_cooperative\\agent_audio\\turn_02_agent_response.wav",
+            "provider": "windows_sapi",
+            "status": "ok",
+            "text_path": "C:\\Users\\dwive\\Documents\\Codex\\2026-07-17\\can-an\\work\\hdfc_kb_scraper\\demos\\call_results\\q1_multiturn\\q1_call_001_cooperative\\agent_audio\\turn_02_agent_response.txt",
+            "metadata": {
+              "engine": "System.Speech.Synthesis.SpeechSynthesizer"
+            }
+          },
+          "expected_action": "answer_question",
+          "actual_action": "answer_question",
+          "turn_pass": true
+        },
+        {
+          "turn_index": 3,
+          "caller_script_text": "What processing fee will I need to pay?",
+          "caller_audio": {
+            "audio_path": "C:\\Users\\dwive\\Documents\\Codex\\2026-07-17\\can-an\\work\\hdfc_kb_scraper\\demos\\call_results\\q1_multiturn\\q1_call_001_cooperative\\caller_audio\\turn_03_customer.wav",
+            "provider": "windows_sapi",
+            "status": "ok",
+            "text_path": "C:\\Users\\dwive\\Documents\\Codex\\2026-07-17\\can-an\\work\\hdfc_kb_scraper\\demos\\call_results\\q1_multiturn\\q1_call_001_cooperative\\caller_audio\\turn_03_customer.txt",
+            "metadata": {
+              "engine": "System.Speech.Synthesis.SpeechSynthesizer"
+            }
+          },
+          "stt": {
+            "transcript": "What processing fee will I need to pay",
+            "provider": "windows_sapi",
+            "confidence": 0.7434817,
+            "language": "en-US",
+            "metadata": {
+              "audio_path": "C:\\Users\\dwive\\Documents\\Codex\\2026-07-17\\can-an\\work\\hdfc_kb_scraper\\demos\\call_results\\q1_multiturn\\q1_call_001_cooperative\\caller_audio\\turn_03_customer.wav",
+              "status": "ok",
+              "recognizer_name": "MS-1033-80-DESK",
+              "recognizer_description": "Microsoft Speech Recognizer 8.0 for Windows (English - US)",
+              "alternates": [
+                {
+                  "text": "What processing fee will I need to pay",
+                  "confidence": 0.7434817
+                },
+                {
+                  "text": "what processing fee will I need to pay",
+                  "confidence": 0.7434817
+                },
+                {
+                  "text": "what processing fee will I need to pay a",
+                  "confidence": 0.704595864
+                },
+                {
+                  "text": "what processing fee will I need to pick",
+                  "confidence": 0.683139
+                },
+                {
+                  "text": "what processing fee well I need to pay",
+                  "confidence": 0.6870295
+                }
+              ]
+            }
+          },
+          "agent_query": "What processing fee will I need to pay",
+          "agent_response": {
+            "generated_at_utc": "2026-07-18T10:02:08.013005+00:00",
+            "session_id": "q1_call_001_cooperative",
+            "agent": {
+              "brand_name": "Lendingkart",
+              "agent_name": "Asha",
+              "max_spoken_words": 70,
+              "cite_sources_in_voice": false,
+              "include_follow_up": true
+            },
+            "input": {
+              "caller_utterance_masked": "What processing fee will I need to pay",
+              "retrieval_query": "What processing fee will I need to pay",
+              "pii_masks": {}
+            },
+            "response": {
+              "spoken_text": "Type: Cooling-off period*; Unsecured Business Loan interest rate and Charges: Up to 2% of the sanction amount (a portion of processing fee) can be retained in case the customer decides to exit the loan in cooling-off period i.e., within 3 days from the day of disbursal; Unsecured Personal Loan interest rate and Charges: NA Would you like me to also explain how this may affect the total repayment?",
+              "action": "answer_fee_or_charge",
+              "retrieval_status": "answered",
+              "retrieval_reason": "sufficient_retrieval_confidence",
+              "human_escalation_required": false
+            },
+            "grounding": {
+              "citations": [
+                {
+                  "record_id": "kb_b7b2ef8cc862",
+                  "label": "Lendingkart Schedule of Charges",
+                  "url": "https://www.lendingkart.com/legal-compliance/schedule-of-charges/",
+                  "source_id": "lendingkart_schedule_of_charges",
+                  "evidence": "Type: Cooling-off period*; Unsecured Business Loan interest rate and Charges: Up to 2% of the sanction amount (a portion of processing fee) can be retained in case the customer decides to exit the loan in cooling-off period i.e., within 3 days from the day of..."
+                },
+                {
+                  "record_id": "kb_786948d0ab07",
+                  "label": "Lendingkart Application Fees FAQ",
+                  "url": "https://www.lendingkart.com/faqs/are-there-any-fees-when-applying-for-a-business-loan/",
+                  "source_id": "lendingkart_faq_application_fees",
+                  "evidence": "Yes. A processing fee of up to 4% of the sanctioned (gross loan) amount is charged when applying for a business loan. Applicable taxes, including GST, are charged additionally as per prevailing rates."
+                },
+                {
+                  "record_id": "kb_fc91132acbec",
+                  "label": "Lendingkart Interest Rate, Penalty, and Charges Policy",
+                  "url": "https://media.lendingkart.com/wp-content/uploads/2026/06/Policy-on-Interest-Rate-Penalties-and-Other-Charges_website_version_v20260616.docx.pdf",
+                  "source_id": "lendingkart_interest_penalty_policy",
+                  "evidence": "1. The Annual Percentage Rate (APR) represents the total annual cost of borrowing. In addition to the interest rate, it includes processing fee, document charges and charges related to insurance/other cross-sell products offered. All the components of APR will be disclosed in the"
+                }
+              ],
+              "top_records": [
+                {
+                  "record_id": "kb_b7b2ef8cc862",
+                  "score": 17.0567,
+                  "score_parts": {
+                    "bm25": 8.7567,
+                    "keyword_overlap": 0.5,
+                    "category_boost": 0.9,
+                    "subcategory_boost": 1.0,
+                    "exact_phrase": 0.75,
+                    "special_intent": 4.2,
+                    "metadata_boost": 0.3,
+                    "source_type_boost": 0.35,
+                    "quality_boost": 0.3
+                  },
+                  "category": "fees_and_charges",
+                  "sub_category": "processing_fee",
+                  "source_id": "lendingkart_schedule_of_charges",
+                  "source_type": "table",
+                  "quality_status": "approved",
+                  "warnings": []
+                },
+                {
+                  "record_id": "kb_786948d0ab07",
+                  "score": 16.5738,
+                  "score_parts": {
+                    "bm25": 9.0288,
+                    "keyword_overlap": 0.5,
+                    "category_boost": 0.9,
+                    "subcategory_boost": 1.0,
+                    "exact_phrase": 0.75,
+                    "special_intent": 4.2,
+                    "metadata_boost": 0.195,
+                    "source_type_boost": 0.0,
+                    "quality_boost": 0.0
+                  },
+                  "category": "fees_and_charges",
+                  "sub_category": "processing_fee",
+                  "source_id": "lendingkart_faq_application_fees",
+                  "source_type": "webpage",
+                  "quality_status": "approved_with_warning",
+                  "warnings": [
+                    "thin_cleaned_text_after_noise_removal"
+                  ]
+                },
+                {
+                  "record_id": "kb_63ad6c4bbbe7",
+                  "score": 14.6362,
+                  "score_parts": {
+                    "bm25": 8.5562,
+                    "keyword_overlap": 0.5,
+                    "category_boost": 0.0,
+                    "subcategory_boost": 1.0,
+                    "exact_phrase": 0.75,
+                    "special_intent": 3.0,
+                    "metadata_boost": 0.18,
+                    "source_type_boost": 0.35,
+                    "quality_boost": 0.3
+                  },
+                  "category": "product_taxonomy",
+                  "sub_category": "processing_fee",
+                  "source_id": "lendingkart_types_of_business_loans",
+                  "source_type": "table",
+                  "quality_status": "approved",
+                  "warnings": [
+                    "thin_single_row_table_lower_priority"
+                  ]
+                },
+                {
+                  "record_id": "kb_fc91132acbec",
+                  "score": 13.122,
+                  "score_parts": {
+                    "bm25": 10.262,
+                    "keyword_overlap": 0.5,
+                    "category_boost": 0.9,
+                    "subcategory_boost": 1.0,
+                    "exact_phrase": 0.75,
+                    "special_intent": -1.0,
+                    "metadata_boost": 0.21,
+                    "source_type_boost": 0.2,
+                    "quality_boost": 0.3
+                  },
+                  "category": "fees_and_charges",
+                  "sub_category": "processing_fee",
+                  "source_id": "lendingkart_interest_penalty_policy",
+                  "source_type": "pdf",
+                  "quality_status": "approved",
+                  "warnings": []
+                },
+                {
+                  "record_id": "kb_e2e0874551bd",
+                  "score": 12.3316,
+                  "score_parts": {
+                    "bm25": 11.3816,
+                    "keyword_overlap": 0.5,
+                    "category_boost": 0.0,
+                    "subcategory_boost": 0.0,
+                    "exact_phrase": 0.0,
+                    "special_intent": 0.0,
+                    "metadata_boost": 0.15,
+                    "source_type_boost": 0.0,
+                    "quality_boost": 0.3
+                  },
+                  "category": "credit_score",
+                  "sub_category": "missed_payment",
+                  "source_id": "lendingkart_cibil_business_loan",
+                  "source_type": "webpage",
+                  "quality_status": "approved",
+                  "warnings": []
+                }
+              ]
+            }
+          },
+          "tts": {
+            "audio_path": "C:\\Users\\dwive\\Documents\\Codex\\2026-07-17\\can-an\\work\\hdfc_kb_scraper\\demos\\call_results\\q1_multiturn\\q1_call_001_cooperative\\agent_audio\\turn_03_agent_response.wav",
+            "provider": "windows_sapi",
+            "status": "ok",
+            "text_path": "C:\\Users\\dwive\\Documents\\Codex\\2026-07-17\\can-an\\work\\hdfc_kb_scraper\\demos\\call_results\\q1_multiturn\\q1_call_001_cooperative\\agent_audio\\turn_03_agent_response.txt",
+            "metadata": {
+              "engine": "System.Speech.Synthesis.SpeechSynthesizer"
+            }
+          },
+          "expected_action": "answer_fee_or_charge",
+          "actual_action": "answer_fee_or_charge",
+          "turn_pass": true
+        }
+      ]
+    },
+    {
+      "generated_at_utc": "2026-07-18T10:02:22.182680+00:00",
+      "session_id": "q1_call_002_objection_and_safety",
+      "name": "Objection with fraud-safety question",
+      "coverage": [
+        "objection",
+        "customer_protection",
+        "safe_fallback"
+      ],
+      "project_root": "C:\\Users\\dwive\\OneDrive\\Desktop\\New folder (6)",
+      "providers": {
+        "stt": "windows_sapi",
+        "caller_audio_synthesis": "windows_sapi",
+        "agent_tts": "windows_sapi"
+      },
+      "turn_count": 3,
+      "pass_count": 3,
+      "pass_rate": 1.0,
+      "session_state": {
+        "session_id": "q1_call_002_objection_and_safety",
+        "turn_count": 3,
+        "actions": [
+          "answer_fee_or_charge",
+          "warn_customer_safety",
+          "escalate_to_human"
+        ],
+        "topics": [
+          "fees_and_charges/interest_rate",
+          "customer_protection/loan_fraud_advisory",
+          "repayment/interest_rate"
+        ],
+        "human_escalation_required": true,
+        "callback_requested": true
+      },
+      "transcript_text_path": "C:\\Users\\dwive\\Documents\\Codex\\2026-07-17\\can-an\\work\\hdfc_kb_scraper\\demos\\call_results\\q1_multiturn\\q1_call_002_objection_and_safety\\transcripts\\q1_call_002_objection_and_safety_transcript.txt",
+      "turns": [
+        {
+          "turn_index": 1,
+          "caller_script_text": "The interest and charges sound expensive. What fees should I know before applying?",
+          "caller_audio": {
+            "audio_path": "C:\\Users\\dwive\\Documents\\Codex\\2026-07-17\\can-an\\work\\hdfc_kb_scraper\\demos\\call_results\\q1_multiturn\\q1_call_002_objection_and_safety\\caller_audio\\turn_01_customer.wav",
+            "provider": "windows_sapi",
+            "status": "ok",
+            "text_path": "C:\\Users\\dwive\\Documents\\Codex\\2026-07-17\\can-an\\work\\hdfc_kb_scraper\\demos\\call_results\\q1_multiturn\\q1_call_002_objection_and_safety\\caller_audio\\turn_01_customer.txt",
+            "metadata": {
+              "engine": "System.Speech.Synthesis.SpeechSynthesizer"
+            }
+          },
+          "stt": {
+            "transcript": "The interest in charges sound expensive",
+            "provider": "windows_sapi",
+            "confidence": 0.6658122,
+            "language": "en-US",
+            "metadata": {
+              "audio_path": "C:\\Users\\dwive\\Documents\\Codex\\2026-07-17\\can-an\\work\\hdfc_kb_scraper\\demos\\call_results\\q1_multiturn\\q1_call_002_objection_and_safety\\caller_audio\\turn_01_customer.wav",
+              "status": "ok",
+              "recognizer_name": "MS-1033-80-DESK",
+              "recognizer_description": "Microsoft Speech Recognizer 8.0 for Windows (English - US)",
+              "alternates": [
+                {
+                  "text": "The interest in charges sound expensive",
+                  "confidence": 0.6658122
+                },
+                {
+                  "text": "the interest in charges sound expensive",
+                  "confidence": 0.6658122
+                },
+                {
+                  "text": "the interest in charge is sound expensive",
+                  "confidence": 0.650707841
+                },
+                {
+                  "text": "the interest in charges sell expensive",
+                  "confidence": 0.681580365
+                },
+                {
+                  "text": "the interest in charge as sound expensive",
+                  "confidence": 0.64682585
+                }
+              ]
+            }
+          },
+          "agent_query": "The interest in charges sound expensive",
+          "agent_response": {
+            "generated_at_utc": "2026-07-18T10:02:12.320466+00:00",
+            "session_id": "q1_call_002_objection_and_safety",
+            "agent": {
+              "brand_name": "Lendingkart",
+              "agent_name": "Asha",
+              "max_spoken_words": 70,
+              "cite_sources_in_voice": false,
+              "include_follow_up": true
+            },
+            "input": {
+              "caller_utterance_masked": "The interest in charges sound expensive",
+              "retrieval_query": "The interest in charges sound expensive",
+              "pii_masks": {}
+            },
+            "response": {
+              "spoken_text": "Type: Legal charges; Unsecured Business Loan interest rate and Charges: At actuals.; Unsecured Personal Loan interest rate and Charges: At actuals. Would you like me to also explain how this may affect the total repayment?",
+              "action": "answer_fee_or_charge",
+              "retrieval_status": "answered",
+              "retrieval_reason": "sufficient_retrieval_confidence",
+              "human_escalation_required": false
+            },
+            "grounding": {
+              "citations": [
+                {
+                  "record_id": "kb_1bb7a8d2839a",
+                  "label": "Lendingkart Schedule of Charges",
+                  "url": "https://www.lendingkart.com/legal-compliance/schedule-of-charges/",
+                  "source_id": "lendingkart_schedule_of_charges",
+                  "evidence": "Type: Legal charges; Unsecured Business Loan interest rate and Charges: At actuals.; Unsecured Personal Loan interest rate and Charges: At actuals."
+                }
+              ],
+              "top_records": [
+                {
+                  "record_id": "kb_1bb7a8d2839a",
+                  "score": 7.4867,
+                  "score_parts": {
+                    "bm25": 4.6367,
+                    "keyword_overlap": 0.5,
+                    "category_boost": 0.9,
+                    "subcategory_boost": 0.5,
+                    "exact_phrase": 0.0,
+                    "special_intent": 0.0,
+                    "metadata_boost": 0.3,
+                    "source_type_boost": 0.35,
+                    "quality_boost": 0.3
+                  },
+                  "category": "fees_and_charges",
+                  "sub_category": "interest_rate",
+                  "source_id": "lendingkart_schedule_of_charges",
+                  "source_type": "table",
+                  "quality_status": "approved",
+                  "warnings": []
+                },
+                {
+                  "record_id": "kb_16db4cb901fc",
+                  "score": 7.4492,
+                  "score_parts": {
+                    "bm25": 4.5992,
+                    "keyword_overlap": 0.5,
+                    "category_boost": 0.9,
+                    "subcategory_boost": 0.5,
+                    "exact_phrase": 0.0,
+                    "special_intent": 0.0,
+                    "metadata_boost": 0.3,
+                    "source_type_boost": 0.35,
+                    "quality_boost": 0.3
+                  },
+                  "category": "fees_and_charges",
+                  "sub_category": "interest_rate",
+                  "source_id": "lendingkart_schedule_of_charges",
+                  "source_type": "table",
+                  "quality_status": "approved",
+                  "warnings": []
+                },
+                {
+                  "record_id": "kb_b8c6d92e0803",
+                  "score": 7.3584,
+                  "score_parts": {
+                    "bm25": 4.5084,
+                    "keyword_overlap": 0.5,
+                    "category_boost": 0.9,
+                    "subcategory_boost": 0.5,
+                    "exact_phrase": 0.0,
+                    "special_intent": 0.0,
+                    "metadata_boost": 0.3,
+                    "source_type_boost": 0.35,
+                    "quality_boost": 0.3
+                  },
+                  "category": "fees_and_charges",
+                  "sub_category": "interest_rate",
+                  "source_id": "lendingkart_schedule_of_charges",
+                  "source_type": "table",
+                  "quality_status": "approved",
+                  "warnings": []
+                },
+                {
+                  "record_id": "kb_41eb50904aa0",
+                  "score": 7.339,
+                  "score_parts": {
+                    "bm25": 4.489,
+                    "keyword_overlap": 0.5,
+                    "category_boost": 0.9,
+                    "subcategory_boost": 0.5,
+                    "exact_phrase": 0.0,
+                    "special_intent": 0.0,
+                    "metadata_boost": 0.3,
+                    "source_type_boost": 0.35,
+                    "quality_boost": 0.3
+                  },
+                  "category": "fees_and_charges",
+                  "sub_category": "interest_rate",
+                  "source_id": "lendingkart_schedule_of_charges",
+                  "source_type": "table",
+                  "quality_status": "approved",
+                  "warnings": []
+                },
+                {
+                  "record_id": "kb_52d85b825133",
+                  "score": 7.2627,
+                  "score_parts": {
+                    "bm25": 4.4127,
+                    "keyword_overlap": 0.5,
+                    "category_boost": 0.9,
+                    "subcategory_boost": 0.5,
+                    "exact_phrase": 0.0,
+                    "special_intent": 0.0,
+                    "metadata_boost": 0.3,
+                    "source_type_boost": 0.35,
+                    "quality_boost": 0.3
+                  },
+                  "category": "fees_and_charges",
+                  "sub_category": "interest_rate",
+                  "source_id": "lendingkart_schedule_of_charges",
+                  "source_type": "table",
+                  "quality_status": "approved",
+                  "warnings": []
+                }
+              ]
+            }
+          },
+          "tts": {
+            "audio_path": "C:\\Users\\dwive\\Documents\\Codex\\2026-07-17\\can-an\\work\\hdfc_kb_scraper\\demos\\call_results\\q1_multiturn\\q1_call_002_objection_and_safety\\agent_audio\\turn_01_agent_response.wav",
+            "provider": "windows_sapi",
+            "status": "ok",
+            "text_path": "C:\\Users\\dwive\\Documents\\Codex\\2026-07-17\\can-an\\work\\hdfc_kb_scraper\\demos\\call_results\\q1_multiturn\\q1_call_002_objection_and_safety\\agent_audio\\turn_01_agent_response.txt",
+            "metadata": {
+              "engine": "System.Speech.Synthesis.SpeechSynthesizer"
+            }
+          },
+          "expected_action": "answer_fee_or_charge",
+          "actual_action": "answer_fee_or_charge",
+          "turn_pass": true
+        },
+        {
+          "turn_index": 2,
+          "caller_script_text": "Someone claiming to be from Lendingkart asked me to pay money before disbursal. Is that safe?",
+          "caller_audio": {
+            "audio_path": "C:\\Users\\dwive\\Documents\\Codex\\2026-07-17\\can-an\\work\\hdfc_kb_scraper\\demos\\call_results\\q1_multiturn\\q1_call_002_objection_and_safety\\caller_audio\\turn_02_customer.wav",
+            "provider": "windows_sapi",
+            "status": "ok",
+            "text_path": "C:\\Users\\dwive\\Documents\\Codex\\2026-07-17\\can-an\\work\\hdfc_kb_scraper\\demos\\call_results\\q1_multiturn\\q1_call_002_objection_and_safety\\caller_audio\\turn_02_customer.txt",
+            "metadata": {
+              "engine": "System.Speech.Synthesis.SpeechSynthesizer"
+            }
+          },
+          "stt": {
+            "transcript": "Someone claiming to be from lending card asked me to pay money before disbursal",
+            "provider": "windows_sapi",
+            "confidence": 0.7097085,
+            "language": "en-US",
+            "metadata": {
+              "audio_path": "C:\\Users\\dwive\\Documents\\Codex\\2026-07-17\\can-an\\work\\hdfc_kb_scraper\\demos\\call_results\\q1_multiturn\\q1_call_002_objection_and_safety\\caller_audio\\turn_02_customer.wav",
+              "status": "ok",
+              "recognizer_name": "MS-1033-80-DESK",
+              "recognizer_description": "Microsoft Speech Recognizer 8.0 for Windows (English - US)",
+              "alternates": [
+                {
+                  "text": "Someone claiming to be from lending card asked me to pay money before disbursal",
+                  "confidence": 0.7097085
+                },
+                {
+                  "text": "someone claiming to be from lending card asked me to pay money before disbursal",
+                  "confidence": 0.7097085
+                },
+                {
+                  "text": "someone claiming to be from lending card ask me to pay money before disbursal",
+                  "confidence": 0.70538497
+                },
+                {
+                  "text": "someone claiming to be from lending card asked me to pay money before dispersal",
+                  "confidence": 0.6152079
+                },
+                {
+                  "text": "someone claiming to be from lending card asked me to pay money before disbursal of",
+                  "confidence": 0.6839162
+                }
+              ]
+            }
+          },
+          "agent_query": "Someone claiming to be from lending card asked me to pay money before disbursal",
+          "agent_response": {
+            "generated_at_utc": "2026-07-18T10:02:16.332891+00:00",
+            "session_id": "q1_call_002_objection_and_safety",
+            "agent": {
+              "brand_name": "Lendingkart",
+              "agent_name": "Asha",
+              "max_spoken_words": 70,
+              "cite_sources_in_voice": false,
+              "include_follow_up": true
+            },
+            "input": {
+              "caller_utterance_masked": "Someone claiming to be from lending card asked me to pay money before disbursal",
+              "retrieval_query": "Someone claiming to be from lending card asked me to pay money before disbursal",
+              "pii_masks": {}
+            },
+            "response": {
+              "spoken_text": "We have come across instances where fraudsters are duping customers by claiming to be representatives of Lendingkart Finance Limited and also at times by using fake websites. Please beware of fraudsters while conducting your financial transactions - duly verify the authenticity of all communications (calls, emails, SMS, websites or advertisements) before making any payment or sharing any documents. Please be careful while opening links or attachments from unknown third parties. If anyone has asked you for upfront money, please do not pay and contact official support.",
+              "action": "warn_customer_safety",
+              "retrieval_status": "answered",
+              "retrieval_reason": "sufficient_retrieval_confidence",
+              "human_escalation_required": false
+            },
+            "grounding": {
+              "citations": [
+                {
+                  "record_id": "kb_7d4541cdc16e",
+                  "label": "Lendingkart Loan Fraud Advisory",
+                  "url": "https://www.lendingkart.com/legal-compliance/loan-fraud-advisory/",
+                  "source_id": "lendingkart_loan_fraud_advisory",
+                  "evidence": "Loan Fraud Advisory\nWe have come across instances where fraudsters are duping customers by claiming to\nbe representatives of Lendingkart Finance Limited and also at times by using fake\nwebsites. Please beware of fraudsters while conducting your financial transactions -\nduly verif"
+                }
+              ],
+              "top_records": [
+                {
+                  "record_id": "kb_7d4541cdc16e",
+                  "score": 18.9785,
+                  "score_parts": {
+                    "bm25": 8.3185,
+                    "keyword_overlap": 0.0,
+                    "category_boost": 0.45,
+                    "subcategory_boost": 0.5,
+                    "exact_phrase": 0.0,
+                    "special_intent": 9.0,
+                    "metadata_boost": 0.21,
+                    "source_type_boost": 0.2,
+                    "quality_boost": 0.3
+                  },
+                  "category": "customer_protection",
+                  "sub_category": "loan_fraud_advisory",
+                  "source_id": "lendingkart_loan_fraud_advisory",
+                  "source_type": "pdf",
+                  "quality_status": "approved",
+                  "warnings": []
+                },
+                {
+                  "record_id": "kb_e2e0874551bd",
+                  "score": 12.173,
+                  "score_parts": {
+                    "bm25": 14.223,
+                    "keyword_overlap": 0.5,
+                    "category_boost": 0.0,
+                    "subcategory_boost": 0.0,
+                    "exact_phrase": 0.0,
+                    "special_intent": -3.0,
+                    "metadata_boost": 0.15,
+                    "source_type_boost": 0.0,
+                    "quality_boost": 0.3
+                  },
+                  "category": "credit_score",
+                  "sub_category": "missed_payment",
+                  "source_id": "lendingkart_cibil_business_loan",
+                  "source_type": "webpage",
+                  "quality_status": "approved",
+                  "warnings": []
+                },
+                {
+                  "record_id": "kb_8dae5c5842ed",
+                  "score": 12.1006,
+                  "score_parts": {
+                    "bm25": 11.1506,
+                    "keyword_overlap": 0.5,
+                    "category_boost": 0.0,
+                    "subcategory_boost": 0.0,
+                    "exact_phrase": 0.0,
+                    "special_intent": 0.0,
+                    "metadata_boost": 0.15,
+                    "source_type_boost": 0.0,
+                    "quality_boost": 0.3
+                  },
+                  "category": "product_taxonomy",
+                  "sub_category": "loan_amount",
+                  "source_id": "lendingkart_types_of_business_loans",
+                  "source_type": "webpage",
+                  "quality_status": "approved",
+                  "warnings": []
+                },
+                {
+                  "record_id": "kb_9aff68b6aab7",
+                  "score": 8.648,
+                  "score_parts": {
+                    "bm25": 2.438,
+                    "keyword_overlap": 0.0,
+                    "category_boost": 0.0,
+                    "subcategory_boost": 0.5,
+                    "exact_phrase": 0.0,
+                    "special_intent": 5.0,
+                    "metadata_boost": 0.21,
+                    "source_type_boost": 0.2,
+                    "quality_boost": 0.3
+                  },
+                  "category": "fees_and_charges",
+                  "sub_category": "loan_fraud_advisory",
+                  "source_id": "lendingkart_interest_penalty_policy",
+                  "source_type": "pdf",
+                  "quality_status": "approved",
+                  "warnings": []
+                },
+                {
+                  "record_id": "kb_99817ec65548",
+                  "score": 8.105,
+                  "score_parts": {
+                    "bm25": 7.155,
+                    "keyword_overlap": 0.5,
+                    "category_boost": 0.0,
+                    "subcategory_boost": 0.0,
+                    "exact_phrase": 0.0,
+                    "special_intent": 0.0,
+                    "metadata_boost": 0.15,
+                    "source_type_boost": 0.0,
+                    "quality_boost": 0.3
+                  },
+                  "category": "repayment",
+                  "sub_category": "late_payment_charge",
+                  "source_id": "lendingkart_emi_calculator",
+                  "source_type": "webpage",
+                  "quality_status": "approved",
+                  "warnings": []
+                }
+              ]
+            }
+          },
+          "tts": {
+            "audio_path": "C:\\Users\\dwive\\Documents\\Codex\\2026-07-17\\can-an\\work\\hdfc_kb_scraper\\demos\\call_results\\q1_multiturn\\q1_call_002_objection_and_safety\\agent_audio\\turn_02_agent_response.wav",
+            "provider": "windows_sapi",
+            "status": "ok",
+            "text_path": "C:\\Users\\dwive\\Documents\\Codex\\2026-07-17\\can-an\\work\\hdfc_kb_scraper\\demos\\call_results\\q1_multiturn\\q1_call_002_objection_and_safety\\agent_audio\\turn_02_agent_response.txt",
+            "metadata": {
+              "engine": "System.Speech.Synthesis.SpeechSynthesizer"
+            }
+          },
+          "expected_action": "warn_customer_safety",
+          "actual_action": "warn_customer_safety",
+          "turn_pass": true
+        },
+        {
+          "turn_index": 3,
+          "caller_script_text": "Can a human advisor call me later to confirm this?",
+          "caller_audio": {
+            "audio_path": "C:\\Users\\dwive\\Documents\\Codex\\2026-07-17\\can-an\\work\\hdfc_kb_scraper\\demos\\call_results\\q1_multiturn\\q1_call_002_objection_and_safety\\caller_audio\\turn_03_customer.wav",
+            "provider": "windows_sapi",
+            "status": "ok",
+            "text_path": "C:\\Users\\dwive\\Documents\\Codex\\2026-07-17\\can-an\\work\\hdfc_kb_scraper\\demos\\call_results\\q1_multiturn\\q1_call_002_objection_and_safety\\caller_audio\\turn_03_customer.txt",
+            "metadata": {
+              "engine": "System.Speech.Synthesis.SpeechSynthesizer"
+            }
+          },
+          "stt": {
+            "transcript": "Can a human adviser Callie later to confirm this",
+            "provider": "windows_sapi",
+            "confidence": 0.6930161,
+            "language": "en-US",
+            "metadata": {
+              "audio_path": "C:\\Users\\dwive\\Documents\\Codex\\2026-07-17\\can-an\\work\\hdfc_kb_scraper\\demos\\call_results\\q1_multiturn\\q1_call_002_objection_and_safety\\caller_audio\\turn_03_customer.wav",
+              "status": "ok",
+              "recognizer_name": "MS-1033-80-DESK",
+              "recognizer_description": "Microsoft Speech Recognizer 8.0 for Windows (English - US)",
+              "alternates": [
+                {
+                  "text": "Can a human adviser Callie later to confirm this",
+                  "confidence": 0.6930161
+                },
+                {
+                  "text": "can a human adviser callie later to confirm this",
+                  "confidence": 0.6930161
+                },
+                {
+                  "text": "can a human adviser call me later to confirm this",
+                  "confidence": 0.6605947
+                },
+                {
+                  "text": "can a human advisor call me later to confirm this",
+                  "confidence": 0.6648607
+                },
+                {
+                  "text": "can a human adviser called me later to confirm this",
+                  "confidence": 0.667133749
+                }
+              ]
+            }
+          },
+          "agent_query": "Can a human adviser Callie later to confirm this",
+          "agent_response": {
+            "generated_at_utc": "2026-07-18T10:02:20.838588+00:00",
+            "session_id": "q1_call_002_objection_and_safety",
+            "agent": {
+              "brand_name": "Lendingkart",
+              "agent_name": "Asha",
+              "max_spoken_words": 70,
+              "cite_sources_in_voice": false,
+              "include_follow_up": true
+            },
+            "input": {
+              "caller_utterance_masked": "Can a human adviser Callie later to confirm this",
+              "retrieval_query": "Can a human adviser Callie later to confirm this",
+              "pii_masks": {}
+            },
+            "response": {
+              "spoken_text": "I do not want to guess on this. I found some related information, but a human specialist should confirm it before we continue. I can arrange a callback or transfer.",
+              "action": "escalate_to_human",
+              "retrieval_status": "answered",
+              "retrieval_reason": "sufficient_retrieval_confidence",
+              "human_escalation_required": true
+            },
+            "grounding": {
+              "citations": [
+                {
+                  "record_id": "kb_ef46b1c312b1",
+                  "label": "Lendingkart EMI Calculator",
+                  "url": "https://www.lendingkart.com/business-loan-emi-calculator/",
+                  "source_id": "lendingkart_emi_calculator",
+                  "evidence": "Interest to avail business loan is determined by the principal amount, the rate of interest, and the loan's tenure. The interest component is higher during the initial months of the loan tenure and gradually decreases with each payment. This is due to the amortization schedule..."
+                }
+              ],
+              "top_records": [
+                {
+                  "record_id": "kb_ef46b1c312b1",
+                  "score": 6.9033,
+                  "score_parts": {
+                    "bm25": 6.4533,
+                    "keyword_overlap": 0.0,
+                    "category_boost": 0.0,
+                    "subcategory_boost": 0.0,
+                    "exact_phrase": 0.0,
+                    "special_intent": 0.0,
+                    "metadata_boost": 0.15,
+                    "source_type_boost": 0.0,
+                    "quality_boost": 0.3
+                  },
+                  "category": "repayment",
+                  "sub_category": "interest_rate",
+                  "source_id": "lendingkart_emi_calculator",
+                  "source_type": "webpage",
+                  "quality_status": "approved",
+                  "warnings": []
+                },
+                {
+                  "record_id": "kb_3478a7d76e03",
+                  "score": 6.157,
+                  "score_parts": {
+                    "bm25": 5.707,
+                    "keyword_overlap": 0.0,
+                    "category_boost": 0.0,
+                    "subcategory_boost": 0.0,
+                    "exact_phrase": 0.0,
+                    "special_intent": 0.0,
+                    "metadata_boost": 0.15,
+                    "source_type_boost": 0.0,
+                    "quality_boost": 0.3
+                  },
+                  "category": "privacy_pii",
+                  "sub_category": "co_lending_partners",
+                  "source_id": "lendingkart_privacy_policy",
+                  "source_type": "webpage",
+                  "quality_status": "approved",
+                  "warnings": []
+                },
+                {
+                  "record_id": "kb_8dae5c5842ed",
+                  "score": 6.0473,
+                  "score_parts": {
+                    "bm25": 5.5973,
+                    "keyword_overlap": 0.0,
+                    "category_boost": 0.0,
+                    "subcategory_boost": 0.0,
+                    "exact_phrase": 0.0,
+                    "special_intent": 0.0,
+                    "metadata_boost": 0.15,
+                    "source_type_boost": 0.0,
+                    "quality_boost": 0.3
+                  },
+                  "category": "product_taxonomy",
+                  "sub_category": "loan_amount",
+                  "source_id": "lendingkart_types_of_business_loans",
+                  "source_type": "webpage",
+                  "quality_status": "approved",
+                  "warnings": []
+                },
+                {
+                  "record_id": "kb_8bce823f62d1",
+                  "score": 5.1433,
+                  "score_parts": {
+                    "bm25": 4.6483,
+                    "keyword_overlap": 0.0,
+                    "category_boost": 0.0,
+                    "subcategory_boost": 0.0,
+                    "exact_phrase": 0.0,
+                    "special_intent": 0.0,
+                    "metadata_boost": 0.195,
+                    "source_type_boost": 0.0,
+                    "quality_boost": 0.3
+                  },
+                  "category": "eligibility",
+                  "sub_category": "loan_amount",
+                  "source_id": "lendingkart_eligibility_requirements",
+                  "source_type": "webpage",
+                  "quality_status": "approved",
+                  "warnings": []
+                },
+                {
+                  "record_id": "kb_f94081cb896e",
+                  "score": 2.5861,
+                  "score_parts": {
+                    "bm25": 1.9211,
+                    "keyword_overlap": 0.0,
+                    "category_boost": 0.0,
+                    "subcategory_boost": 0.0,
+                    "exact_phrase": 0.0,
+                    "special_intent": 0.0,
+                    "metadata_boost": 0.165,
+                    "source_type_boost": 0.2,
+                    "quality_boost": 0.3
+                  },
+                  "category": "compliance_policy",
+                  "sub_category": "documents_required",
+                  "source_id": "lendingkart_restructuring_policy_addendum",
+                  "source_type": "pdf",
+                  "quality_status": "approved",
+                  "warnings": []
+                }
+              ]
+            }
+          },
+          "tts": {
+            "audio_path": "C:\\Users\\dwive\\Documents\\Codex\\2026-07-17\\can-an\\work\\hdfc_kb_scraper\\demos\\call_results\\q1_multiturn\\q1_call_002_objection_and_safety\\agent_audio\\turn_03_agent_response.wav",
+            "provider": "windows_sapi",
+            "status": "ok",
+            "text_path": "C:\\Users\\dwive\\Documents\\Codex\\2026-07-17\\can-an\\work\\hdfc_kb_scraper\\demos\\call_results\\q1_multiturn\\q1_call_002_objection_and_safety\\agent_audio\\turn_03_agent_response.txt",
+            "metadata": {
+              "engine": "System.Speech.Synthesis.SpeechSynthesizer"
+            }
+          },
+          "expected_action": "escalate_to_human",
+          "actual_action": "escalate_to_human",
+          "turn_pass": true
+        }
+      ]
+    },
+    {
+      "generated_at_utc": "2026-07-18T10:02:36.467602+00:00",
+      "session_id": "q1_call_003_repayment_support",
+      "name": "Repayment and incomplete details",
+      "coverage": [
+        "repayment_question",
+        "incomplete_details",
+        "human_assistance_request"
+      ],
+      "project_root": "C:\\Users\\dwive\\OneDrive\\Desktop\\New folder (6)",
+      "providers": {
+        "stt": "windows_sapi",
+        "caller_audio_synthesis": "windows_sapi",
+        "agent_tts": "windows_sapi"
+      },
+      "turn_count": 3,
+      "pass_count": 3,
+      "pass_rate": 1.0,
+      "session_state": {
+        "session_id": "q1_call_003_repayment_support",
+        "turn_count": 3,
+        "actions": [
+          "answer_repayment",
+          "answer_eligibility",
+          "escalate_to_human"
+        ],
+        "topics": [
+          "repayment/missed_payment",
+          "fees_and_charges/interest_rate",
+          "customer_protection/loan_fraud_advisory"
+        ],
+        "human_escalation_required": true,
+        "callback_requested": false
+      },
+      "transcript_text_path": "C:\\Users\\dwive\\Documents\\Codex\\2026-07-17\\can-an\\work\\hdfc_kb_scraper\\demos\\call_results\\q1_multiturn\\q1_call_003_repayment_support\\transcripts\\q1_call_003_repayment_support_transcript.txt",
+      "turns": [
+        {
+          "turn_index": 1,
+          "caller_script_text": "What happens if I miss an EMI payment?",
+          "caller_audio": {
+            "audio_path": "C:\\Users\\dwive\\Documents\\Codex\\2026-07-17\\can-an\\work\\hdfc_kb_scraper\\demos\\call_results\\q1_multiturn\\q1_call_003_repayment_support\\caller_audio\\turn_01_customer.wav",
+            "provider": "windows_sapi",
+            "status": "ok",
+            "text_path": "C:\\Users\\dwive\\Documents\\Codex\\2026-07-17\\can-an\\work\\hdfc_kb_scraper\\demos\\call_results\\q1_multiturn\\q1_call_003_repayment_support\\caller_audio\\turn_01_customer.txt",
+            "metadata": {
+              "engine": "System.Speech.Synthesis.SpeechSynthesizer"
+            }
+          },
+          "stt": {
+            "transcript": "What happens if I was in any payment",
+            "provider": "windows_sapi",
+            "confidence": 0.6491823,
+            "language": "en-US",
+            "metadata": {
+              "audio_path": "C:\\Users\\dwive\\Documents\\Codex\\2026-07-17\\can-an\\work\\hdfc_kb_scraper\\demos\\call_results\\q1_multiturn\\q1_call_003_repayment_support\\caller_audio\\turn_01_customer.wav",
+              "status": "ok",
+              "recognizer_name": "MS-1033-80-DESK",
+              "recognizer_description": "Microsoft Speech Recognizer 8.0 for Windows (English - US)",
+              "alternates": [
+                {
+                  "text": "What happens if I was in any payment",
+                  "confidence": 0.6491823
+                },
+                {
+                  "text": "what happens if I was in any payment",
+                  "confidence": 0.6491823
+                },
+                {
+                  "text": "what happens if I was in any payments",
+                  "confidence": 0.6487824
+                },
+                {
+                  "text": "what happens if I miss in any payment",
+                  "confidence": 0.699532568
+                },
+                {
+                  "text": "what happens if I miss in any payments",
+                  "confidence": 0.699621558
+                }
+              ]
+            }
+          },
+          "agent_query": "What happens if I was in any payment",
+          "agent_response": {
+            "generated_at_utc": "2026-07-18T10:02:25.076585+00:00",
+            "session_id": "q1_call_003_repayment_support",
+            "agent": {
+              "brand_name": "Lendingkart",
+              "agent_name": "Asha",
+              "max_spoken_words": 70,
+              "cite_sources_in_voice": false,
+              "include_follow_up": true
+            },
+            "input": {
+              "caller_utterance_masked": "What happens if I was in any payment",
+              "retrieval_query": "What happens if I was in any payment",
+              "pii_masks": {}
+            },
+            "response": {
+              "spoken_text": "Defaulting on your business loan repayment can result in legal action by the lender. The lender can file a lawsuit against you. If you default on a secured loan, the lender can seize the assets pledged as collateral. Would you like me to explain the next safe step for repayment support?",
+              "action": "answer_repayment",
+              "retrieval_status": "answered",
+              "retrieval_reason": "sufficient_retrieval_confidence",
+              "human_escalation_required": false
+            },
+            "grounding": {
+              "citations": [
+                {
+                  "record_id": "kb_265d5870325e",
+                  "label": "Lendingkart Repayment Guide",
+                  "url": "https://www.lendingkart.com/blog/business-loan-repayment-guide/",
+                  "source_id": "lendingkart_repayment_guide",
+                  "evidence": "Defaulting on your business loan repayment can result in legal action by the lender. The lender can file a lawsuit against you. If you default on a secured loan, the lender can seize the assets pledged as collateral."
+                }
+              ],
+              "top_records": [
+                {
+                  "record_id": "kb_265d5870325e",
+                  "score": 8.3927,
+                  "score_parts": {
+                    "bm25": 7.6927,
+                    "keyword_overlap": 0.25,
+                    "category_boost": 0.0,
+                    "subcategory_boost": 0.0,
+                    "exact_phrase": 0.0,
+                    "special_intent": 0.0,
+                    "metadata_boost": 0.15,
+                    "source_type_boost": 0.0,
+                    "quality_boost": 0.3
+                  },
+                  "category": "repayment",
+                  "sub_category": "missed_payment",
+                  "source_id": "lendingkart_repayment_guide",
+                  "source_type": "webpage",
+                  "quality_status": "approved",
+                  "warnings": []
+                },
+                {
+                  "record_id": "kb_99817ec65548",
+                  "score": 8.3098,
+                  "score_parts": {
+                    "bm25": 7.6098,
+                    "keyword_overlap": 0.25,
+                    "category_boost": 0.0,
+                    "subcategory_boost": 0.0,
+                    "exact_phrase": 0.0,
+                    "special_intent": 0.0,
+                    "metadata_boost": 0.15,
+                    "source_type_boost": 0.0,
+                    "quality_boost": 0.3
+                  },
+                  "category": "repayment",
+                  "sub_category": "late_payment_charge",
+                  "source_id": "lendingkart_emi_calculator",
+                  "source_type": "webpage",
+                  "quality_status": "approved",
+                  "warnings": []
+                },
+                {
+                  "record_id": "kb_f94081cb896e",
+                  "score": 7.2696,
+                  "score_parts": {
+                    "bm25": 6.3546,
+                    "keyword_overlap": 0.25,
+                    "category_boost": 0.0,
+                    "subcategory_boost": 0.0,
+                    "exact_phrase": 0.0,
+                    "special_intent": 0.0,
+                    "metadata_boost": 0.165,
+                    "source_type_boost": 0.2,
+                    "quality_boost": 0.3
+                  },
+                  "category": "compliance_policy",
+                  "sub_category": "documents_required",
+                  "source_id": "lendingkart_restructuring_policy_addendum",
+                  "source_type": "pdf",
+                  "quality_status": "approved",
+                  "warnings": []
+                },
+                {
+                  "record_id": "kb_e4ddc0b28585",
+                  "score": 6.0485,
+                  "score_parts": {
+                    "bm25": 5.3385,
+                    "keyword_overlap": 0.0,
+                    "category_boost": 0.0,
+                    "subcategory_boost": 0.0,
+                    "exact_phrase": 0.0,
+                    "special_intent": 0.0,
+                    "metadata_boost": 0.21,
+                    "source_type_boost": 0.2,
+                    "quality_boost": 0.3
+                  },
+                  "category": "fees_and_charges",
+                  "sub_category": "late_payment_charge",
+                  "source_id": "lendingkart_interest_penalty_policy",
+                  "source_type": "pdf",
+                  "quality_status": "approved",
+                  "warnings": []
+                },
+                {
+                  "record_id": "kb_3c0b1c61117a",
+                  "score": 5.1207,
+                  "score_parts": {
+                    "bm25": 3.9207,
+                    "keyword_overlap": 0.25,
+                    "category_boost": 0.0,
+                    "subcategory_boost": 0.0,
+                    "exact_phrase": 0.0,
+                    "special_intent": 0.0,
+                    "metadata_boost": 0.3,
+                    "source_type_boost": 0.35,
+                    "quality_boost": 0.3
+                  },
+                  "category": "fees_and_charges",
+                  "sub_category": "late_payment_charge",
+                  "source_id": "lendingkart_schedule_of_charges",
+                  "source_type": "table",
+                  "quality_status": "approved",
+                  "warnings": []
+                }
+              ]
+            }
+          },
+          "tts": {
+            "audio_path": "C:\\Users\\dwive\\Documents\\Codex\\2026-07-17\\can-an\\work\\hdfc_kb_scraper\\demos\\call_results\\q1_multiturn\\q1_call_003_repayment_support\\agent_audio\\turn_01_agent_response.wav",
+            "provider": "windows_sapi",
+            "status": "ok",
+            "text_path": "C:\\Users\\dwive\\Documents\\Codex\\2026-07-17\\can-an\\work\\hdfc_kb_scraper\\demos\\call_results\\q1_multiturn\\q1_call_003_repayment_support\\agent_audio\\turn_01_agent_response.txt",
+            "metadata": {
+              "engine": "System.Speech.Synthesis.SpeechSynthesizer"
+            }
+          },
+          "expected_action": "answer_repayment",
+          "actual_action": "answer_repayment",
+          "turn_pass": true
+        },
+        {
+          "turn_index": 2,
+          "caller_script_text": "I cannot share all details right now but want to know if I am eligible.",
+          "caller_audio": {
+            "audio_path": "C:\\Users\\dwive\\Documents\\Codex\\2026-07-17\\can-an\\work\\hdfc_kb_scraper\\demos\\call_results\\q1_multiturn\\q1_call_003_repayment_support\\caller_audio\\turn_02_customer.wav",
+            "provider": "windows_sapi",
+            "status": "ok",
+            "text_path": "C:\\Users\\dwive\\Documents\\Codex\\2026-07-17\\can-an\\work\\hdfc_kb_scraper\\demos\\call_results\\q1_multiturn\\q1_call_003_repayment_support\\caller_audio\\turn_02_customer.txt",
+            "metadata": {
+              "engine": "System.Speech.Synthesis.SpeechSynthesizer"
+            }
+          },
+          "stt": {
+            "transcript": "I cannot cheer all details right now but want to know if I am eligible",
+            "provider": "windows_sapi",
+            "confidence": 0.7215858,
+            "language": "en-US",
+            "metadata": {
+              "audio_path": "C:\\Users\\dwive\\Documents\\Codex\\2026-07-17\\can-an\\work\\hdfc_kb_scraper\\demos\\call_results\\q1_multiturn\\q1_call_003_repayment_support\\caller_audio\\turn_02_customer.wav",
+              "status": "ok",
+              "recognizer_name": "MS-1033-80-DESK",
+              "recognizer_description": "Microsoft Speech Recognizer 8.0 for Windows (English - US)",
+              "alternates": [
+                {
+                  "text": "I cannot cheer all details right now but want to know if I am eligible",
+                  "confidence": 0.7215858
+                },
+                {
+                  "text": "I cannot share all details right now but want to know if I am eligible",
+                  "confidence": 0.6549251
+                },
+                {
+                  "text": "I cannot cheer all details right now but want to know if im eligible",
+                  "confidence": 0.726808131
+                },
+                {
+                  "text": "I cannot sheer all details right now but want to know if I am eligible",
+                  "confidence": 0.68304956
+                },
+                {
+                  "text": "I can a cheer all details right now but want to know if I am eligible",
+                  "confidence": 0.725885332
+                }
+              ]
+            }
+          },
+          "agent_query": "I cannot cheer all details right now but want to know if I am eligible",
+          "agent_response": {
+            "generated_at_utc": "2026-07-18T10:02:29.757893+00:00",
+            "session_id": "q1_call_003_repayment_support",
+            "agent": {
+              "brand_name": "Lendingkart",
+              "agent_name": "Asha",
+              "max_spoken_words": 70,
+              "cite_sources_in_voice": false,
+              "include_follow_up": true
+            },
+            "input": {
+              "caller_utterance_masked": "I cannot cheer all details right now but want to know if I am eligible",
+              "retrieval_query": "I cannot cheer all details right now but want to know if I am eligible",
+              "pii_masks": {}
+            },
+            "response": {
+              "spoken_text": "Lenders in India typically offer two types of business loan interest rates: fixed and floating. Understanding the difference helps you choose the right loan based on your repayment capacity and market conditions. Fixed Business Loan Interest Rate A fixed interest rate remains constant throughout the loan tenure. This means your EMI stays the same every month, making it easier to plan your cash flow and budget. Fixed rates are ideal. Would you like me to list the documents usually needed?",
+              "action": "answer_eligibility",
+              "retrieval_status": "answered",
+              "retrieval_reason": "sufficient_retrieval_confidence",
+              "human_escalation_required": false
+            },
+            "grounding": {
+              "citations": [
+                {
+                  "record_id": "kb_b41bc5e65726",
+                  "label": "Lendingkart Interest Rate and Charges",
+                  "url": "https://www.lendingkart.com/business-loans/interest-rate-charges/",
+                  "source_id": "lendingkart_interest_rate_charges",
+                  "evidence": "Lenders in India typically offer two types of business loan interest rates: fixed and floating. Understanding the difference helps you choose the right loan based on your repayment capacity and market conditions.\nFixed Business Loan Interest Rate A fixed interest rate remains con"
+                }
+              ],
+              "top_records": [
+                {
+                  "record_id": "kb_b41bc5e65726",
+                  "score": 9.9092,
+                  "score_parts": {
+                    "bm25": 9.1642,
+                    "keyword_overlap": 0.25,
+                    "category_boost": 0.0,
+                    "subcategory_boost": 0.0,
+                    "exact_phrase": 0.0,
+                    "special_intent": 0.0,
+                    "metadata_boost": 0.195,
+                    "source_type_boost": 0.0,
+                    "quality_boost": 0.3
+                  },
+                  "category": "fees_and_charges",
+                  "sub_category": "interest_rate",
+                  "source_id": "lendingkart_interest_rate_charges",
+                  "source_type": "webpage",
+                  "quality_status": "approved",
+                  "warnings": []
+                },
+                {
+                  "record_id": "kb_09a6b13a3cd1",
+                  "score": 9.7356,
+                  "score_parts": {
+                    "bm25": 9.0356,
+                    "keyword_overlap": 0.25,
+                    "category_boost": 0.0,
+                    "subcategory_boost": 0.0,
+                    "exact_phrase": 0.0,
+                    "special_intent": 0.0,
+                    "metadata_boost": 0.15,
+                    "source_type_boost": 0.0,
+                    "quality_boost": 0.3
+                  },
+                  "category": "privacy_pii",
+                  "sub_category": "privacy",
+                  "source_id": "lendingkart_privacy_policy",
+                  "source_type": "webpage",
+                  "quality_status": "approved",
+                  "warnings": []
+                },
+                {
+                  "record_id": "kb_c39b8eaa6771",
+                  "score": 9.4495,
+                  "score_parts": {
+                    "bm25": 8.4995,
+                    "keyword_overlap": 0.5,
+                    "category_boost": 0.0,
+                    "subcategory_boost": 0.0,
+                    "exact_phrase": 0.0,
+                    "special_intent": 0.0,
+                    "metadata_boost": 0.15,
+                    "source_type_boost": 0.0,
+                    "quality_boost": 0.3
+                  },
+                  "category": "repayment",
+                  "sub_category": "emi_calculation",
+                  "source_id": "lendingkart_repayment_guide",
+                  "source_type": "webpage",
+                  "quality_status": "approved",
+                  "warnings": []
+                },
+                {
+                  "record_id": "kb_ca0bc5f9e1b9",
+                  "score": 9.3552,
+                  "score_parts": {
+                    "bm25": 8.6552,
+                    "keyword_overlap": 0.25,
+                    "category_boost": 0.0,
+                    "subcategory_boost": 0.0,
+                    "exact_phrase": 0.0,
+                    "special_intent": 0.0,
+                    "metadata_boost": 0.15,
+                    "source_type_boost": 0.0,
+                    "quality_boost": 0.3
+                  },
+                  "category": "privacy_pii",
+                  "sub_category": "privacy",
+                  "source_id": "lendingkart_privacy_policy",
+                  "source_type": "webpage",
+                  "quality_status": "approved",
+                  "warnings": []
+                },
+                {
+                  "record_id": "kb_c5641168ec02",
+                  "score": 9.1789,
+                  "score_parts": {
+                    "bm25": 8.7289,
+                    "keyword_overlap": 0.0,
+                    "category_boost": 0.0,
+                    "subcategory_boost": 0.0,
+                    "exact_phrase": 0.0,
+                    "special_intent": 0.0,
+                    "metadata_boost": 0.15,
+                    "source_type_boost": 0.0,
+                    "quality_boost": 0.3
+                  },
+                  "category": "privacy_pii",
+                  "sub_category": "privacy",
+                  "source_id": "lendingkart_privacy_policy",
+                  "source_type": "webpage",
+                  "quality_status": "approved",
+                  "warnings": []
+                }
+              ]
+            }
+          },
+          "tts": {
+            "audio_path": "C:\\Users\\dwive\\Documents\\Codex\\2026-07-17\\can-an\\work\\hdfc_kb_scraper\\demos\\call_results\\q1_multiturn\\q1_call_003_repayment_support\\agent_audio\\turn_02_agent_response.wav",
+            "provider": "windows_sapi",
+            "status": "ok",
+            "text_path": "C:\\Users\\dwive\\Documents\\Codex\\2026-07-17\\can-an\\work\\hdfc_kb_scraper\\demos\\call_results\\q1_multiturn\\q1_call_003_repayment_support\\agent_audio\\turn_02_agent_response.txt",
+            "metadata": {
+              "engine": "System.Speech.Synthesis.SpeechSynthesizer"
+            }
+          },
+          "expected_action": "answer_eligibility",
+          "actual_action": "answer_eligibility",
+          "turn_pass": true
+        },
+        {
+          "turn_index": 3,
+          "caller_script_text": "Please connect me to a human representative.",
+          "caller_audio": {
+            "audio_path": "C:\\Users\\dwive\\Documents\\Codex\\2026-07-17\\can-an\\work\\hdfc_kb_scraper\\demos\\call_results\\q1_multiturn\\q1_call_003_repayment_support\\caller_audio\\turn_03_customer.wav",
+            "provider": "windows_sapi",
+            "status": "ok",
+            "text_path": "C:\\Users\\dwive\\Documents\\Codex\\2026-07-17\\can-an\\work\\hdfc_kb_scraper\\demos\\call_results\\q1_multiturn\\q1_call_003_repayment_support\\caller_audio\\turn_03_customer.txt",
+            "metadata": {
+              "engine": "System.Speech.Synthesis.SpeechSynthesizer"
+            }
+          },
+          "stt": {
+            "transcript": "Please connect me to a human representative",
+            "provider": "windows_sapi",
+            "confidence": 0.720793247,
+            "language": "en-US",
+            "metadata": {
+              "audio_path": "C:\\Users\\dwive\\Documents\\Codex\\2026-07-17\\can-an\\work\\hdfc_kb_scraper\\demos\\call_results\\q1_multiturn\\q1_call_003_repayment_support\\caller_audio\\turn_03_customer.wav",
+              "status": "ok",
+              "recognizer_name": "MS-1033-80-DESK",
+              "recognizer_description": "Microsoft Speech Recognizer 8.0 for Windows (English - US)",
+              "alternates": [
+                {
+                  "text": "Please connect me to a human representative",
+                  "confidence": 0.720793247
+                },
+                {
+                  "text": "please connect me to a human representative",
+                  "confidence": 0.720793247
+                },
+                {
+                  "text": "please correct me to a human representative",
+                  "confidence": 0.6469824
+                },
+                {
+                  "text": "please connect me to a humane representative",
+                  "confidence": 0.6225755
+                },
+                {
+                  "text": "please contact me to a human representative",
+                  "confidence": 0.6590307
+                }
+              ]
+            }
+          },
+          "agent_query": "Please connect me to a human representative",
+          "agent_response": {
+            "generated_at_utc": "2026-07-18T10:02:35.404764+00:00",
+            "session_id": "q1_call_003_repayment_support",
+            "agent": {
+              "brand_name": "Lendingkart",
+              "agent_name": "Asha",
+              "max_spoken_words": 70,
+              "cite_sources_in_voice": false,
+              "include_follow_up": true
+            },
+            "input": {
+              "caller_utterance_masked": "Please connect me to a human representative",
+              "retrieval_query": "Please connect me to a human representative",
+              "pii_masks": {}
+            },
+            "response": {
+              "spoken_text": "I do not want to guess on this. I found some related information, but a human specialist should confirm it before we continue. I can arrange a callback or transfer.",
+              "action": "escalate_to_human",
+              "retrieval_status": "answered",
+              "retrieval_reason": "sufficient_retrieval_confidence",
+              "human_escalation_required": true
+            },
+            "grounding": {
+              "citations": [
+                {
+                  "record_id": "kb_7d4541cdc16e",
+                  "label": "Lendingkart Loan Fraud Advisory",
+                  "url": "https://www.lendingkart.com/legal-compliance/loan-fraud-advisory/",
+                  "source_id": "lendingkart_loan_fraud_advisory",
+                  "evidence": "Loan Fraud Advisory\nWe have come across instances where fraudsters are duping customers by claiming to\nbe representatives of Lendingkart Finance Limited and also at times by using fake\nwebsites. Please beware of fraudsters while conducting your financial transactions -\nduly verif"
+                }
+              ],
+              "top_records": [
+                {
+                  "record_id": "kb_7d4541cdc16e",
+                  "score": 16.5772,
+                  "score_parts": {
+                    "bm25": 5.6672,
+                    "keyword_overlap": 0.25,
+                    "category_boost": 0.45,
+                    "subcategory_boost": 0.5,
+                    "exact_phrase": 0.0,
+                    "special_intent": 9.0,
+                    "metadata_boost": 0.21,
+                    "source_type_boost": 0.2,
+                    "quality_boost": 0.3
+                  },
+                  "category": "customer_protection",
+                  "sub_category": "loan_fraud_advisory",
+                  "source_id": "lendingkart_loan_fraud_advisory",
+                  "source_type": "pdf",
+                  "quality_status": "approved",
+                  "warnings": []
+                },
+                {
+                  "record_id": "kb_9aff68b6aab7",
+                  "score": 6.21,
+                  "score_parts": {
+                    "bm25": 0.0,
+                    "keyword_overlap": 0.0,
+                    "category_boost": 0.0,
+                    "subcategory_boost": 0.5,
+                    "exact_phrase": 0.0,
+                    "special_intent": 5.0,
+                    "metadata_boost": 0.21,
+                    "source_type_boost": 0.2,
+                    "quality_boost": 0.3
+                  },
+                  "category": "fees_and_charges",
+                  "sub_category": "loan_fraud_advisory",
+                  "source_id": "lendingkart_interest_penalty_policy",
+                  "source_type": "pdf",
+                  "quality_status": "approved",
+                  "warnings": []
+                },
+                {
+                  "record_id": "kb_83efca1a24df",
+                  "score": 6.165,
+                  "score_parts": {
+                    "bm25": 0.0,
+                    "keyword_overlap": 0.0,
+                    "category_boost": 0.0,
+                    "subcategory_boost": 0.5,
+                    "exact_phrase": 0.0,
+                    "special_intent": 5.0,
+                    "metadata_boost": 0.165,
+                    "source_type_boost": 0.2,
+                    "quality_boost": 0.3
+                  },
+                  "category": "compliance_policy",
+                  "sub_category": "loan_fraud_advisory",
+                  "source_id": "lendingkart_operational_risk_policy",
+                  "source_type": "pdf",
+                  "quality_status": "approved",
+                  "warnings": []
+                },
+                {
+                  "record_id": "kb_6952ba411629",
+                  "score": 6.165,
+                  "score_parts": {
+                    "bm25": 0.0,
+                    "keyword_overlap": 0.0,
+                    "category_boost": 0.0,
+                    "subcategory_boost": 0.5,
+                    "exact_phrase": 0.0,
+                    "special_intent": 5.0,
+                    "metadata_boost": 0.165,
+                    "source_type_boost": 0.2,
+                    "quality_boost": 0.3
+                  },
+                  "category": "compliance_policy",
+                  "sub_category": "loan_fraud_advisory",
+                  "source_id": "lendingkart_operational_risk_policy",
+                  "source_type": "pdf",
+                  "quality_status": "approved",
+                  "warnings": []
+                },
+                {
+                  "record_id": "kb_910d2d7f9570",
+                  "score": 5.995,
+                  "score_parts": {
+                    "bm25": 0.0,
+                    "keyword_overlap": 0.0,
+                    "category_boost": 0.0,
+                    "subcategory_boost": 0.5,
+                    "exact_phrase": 0.0,
+                    "special_intent": 5.0,
+                    "metadata_boost": 0.195,
+                    "source_type_boost": 0.0,
+                    "quality_boost": 0.3
+                  },
+                  "category": "fees_and_charges",
+                  "sub_category": "loan_fraud_advisory",
+                  "source_id": "lendingkart_faq_hidden_charges",
+                  "source_type": "webpage",
+                  "quality_status": "approved",
+                  "warnings": []
+                }
+              ]
+            }
+          },
+          "tts": {
+            "audio_path": "C:\\Users\\dwive\\Documents\\Codex\\2026-07-17\\can-an\\work\\hdfc_kb_scraper\\demos\\call_results\\q1_multiturn\\q1_call_003_repayment_support\\agent_audio\\turn_03_agent_response.wav",
+            "provider": "windows_sapi",
+            "status": "ok",
+            "text_path": "C:\\Users\\dwive\\Documents\\Codex\\2026-07-17\\can-an\\work\\hdfc_kb_scraper\\demos\\call_results\\q1_multiturn\\q1_call_003_repayment_support\\agent_audio\\turn_03_agent_response.txt",
+            "metadata": {
+              "engine": "System.Speech.Synthesis.SpeechSynthesizer"
+            }
+          },
+          "expected_action": "escalate_to_human",
+          "actual_action": "escalate_to_human",
+          "turn_pass": true
+        }
+      ]
+    }
+  ]
+}

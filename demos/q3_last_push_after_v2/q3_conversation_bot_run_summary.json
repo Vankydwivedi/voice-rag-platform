@@ -1,0 +1,148 @@
+{
+  "action_counts": {
+    "escalate_to_human": 60,
+    "explain_penalty_or_due_date": 12,
+    "handle_finance_qualification": 37,
+    "handle_installment_reminder": 24,
+    "handle_renewal_or_premium": 31,
+    "handle_sector_objection": 21,
+    "offer_payment_support": 17,
+    "qualify_life_insurance_lead": 38
+  },
+  "average_score": 0.952,
+  "category_quality_counts": {
+    "colloquial_speech": {
+      "good": 30
+    },
+    "compliance_sensitive_fallback": {
+      "good": 30
+    },
+    "cooperative_customer": {
+      "good": 30
+    },
+    "human_escalation": {
+      "good": 30
+    },
+    "mixed_english_finance_terms": {
+      "good": 30
+    },
+    "payment_or_renewal_difficulty": {
+      "good": 30
+    },
+    "regional_accent": {
+      "good": 30
+    },
+    "sector_specific_objection": {
+      "good": 30
+    }
+  },
+  "dataset_path": "C:\\Users\\dwive\\Documents\\Codex\\2026-07-17\\can-an\\work\\hdfc_kb_scraper\\data\\evaluation\\q3_conversational_response_db.jsonl",
+  "fallback_counts": {},
+  "generated_at_utc": "2026-07-19T01:03:32.686416+00:00",
+  "market_category_quality_counts": {
+    "indonesia/colloquial_speech": {
+      "good": 15
+    },
+    "indonesia/compliance_sensitive_fallback": {
+      "good": 15
+    },
+    "indonesia/cooperative_customer": {
+      "good": 15
+    },
+    "indonesia/human_escalation": {
+      "good": 15
+    },
+    "indonesia/mixed_english_finance_terms": {
+      "good": 15
+    },
+    "indonesia/payment_or_renewal_difficulty": {
+      "good": 15
+    },
+    "indonesia/regional_accent": {
+      "good": 15
+    },
+    "indonesia/sector_specific_objection": {
+      "good": 15
+    },
+    "philippines/colloquial_speech": {
+      "good": 15
+    },
+    "philippines/compliance_sensitive_fallback": {
+      "good": 15
+    },
+    "philippines/cooperative_customer": {
+      "good": 15
+    },
+    "philippines/human_escalation": {
+      "good": 15
+    },
+    "philippines/mixed_english_finance_terms": {
+      "good": 15
+    },
+    "philippines/payment_or_renewal_difficulty": {
+      "good": 15
+    },
+    "philippines/regional_accent": {
+      "good": 15
+    },
+    "philippines/sector_specific_objection": {
+      "good": 15
+    }
+  },
+  "market_quality_counts": {
+    "indonesia": {
+      "good": 120
+    },
+    "philippines": {
+      "good": 120
+    }
+  },
+  "most_repeated_actual_responses": [
+    [
+      "Untuk pengajuan pembiayaan, biasanya perlu informasi DP, tenor, data barang atau kendaraan, dokumen identitas, dan kemampuan membayar.",
+      5
+    ],
+    [
+      "Untuk pengajuan, biasanya dicek DP, tenor, barang atau kendaraan yang mau dibiayai, dokumen identitas, dan kemampuan bayar.",
+      5
+    ],
+    [
+      "Sige po, thank you for sharing. For family protection, usually tinitingnan muna kung sino ang gusto ninyong protektahan, magkano ang target coverage, at kung monthly or annual premium ang comfortable. Para ma-guide ko kayo, coverage ba ito mainly for income protection, education fund, or loan protection?",
+      1
+    ],
+    [
+      "Gets ko po. For income protection, importante malaman ang approximate monthly income, existing insurance if any, at budget range. Hindi ko po kailangan ng exact private details dito. Range lang muna, like below 2k, 2k to 5k, or above 5k pesos monthly premium, okay na for initial recommendation.",
+      1
+    ],
+    [
+      "Noted po, 3k monthly and no existing insurance. Good starting point po yan for basic family protection, pero final options depend on age, health declaration, and insurer underwriting. I can summarize the likely plan types and then connect you to a licensed advisor for the official quotation.",
+      1
+    ],
+    [
+      "Pwede po kayong mag-request ng beneficiary update sa policy servicing channel. Kailangan po munang ma-verify ang policy owner bago tanggapin ang pagbabago. Dito, maaari ko lang ipaliwanag ang general steps at hindi ko po kukunin ang buong personal details ng beneficiary.",
+      1
+    ],
+    [
+      "Mas mabuti pong huwag ibigay dito ang full personal details. Para safe, gamitin natin ang official servicing form or advisor-assisted process. Usually hihingin doon ang relationship, complete name, birth date, and supporting details, pero sa verified channel po dapat ilagay.",
+      1
+    ],
+    [
+      "Sa maraming policy servicing requests, maaaring walang fee, pero policy-specific po ito at depende sa insurer rules. I-check po natin sa official servicing team para hindi tayo magbigay ng maling commitment. Gusto ninyo po bang i-route ko kayo sa servicing request path?",
+      1
+    ],
+    [
+      "Depende po sa goal. Term insurance is usually focused on protection for a fixed period. Insurance with investment component can combine protection and fund value, pero hindi guaranteed ang market-linked performance. Ang unang tanong po: priority ninyo ba ay maximum coverage at lower premium, or protection plus long-term savings discipline?",
+      1
+    ],
+    [
+      "Gets po. Kung gusto ninyo ng future value, kailangan nating pag-usapan ang budget, risk tolerance, at kung gaano katagal ninyo kayang ituloy ang premium. Important din po malaman na early withdrawal or missed payments may affect benefits. Ano pong monthly budget range ninyo?",
+      1
+    ]
+  ],
+  "quality_counts": {
+    "good": 240
+  },
+  "scenario_count": 80,
+  "turn_count": 240,
+  "unique_actual_response_count": 232
+}

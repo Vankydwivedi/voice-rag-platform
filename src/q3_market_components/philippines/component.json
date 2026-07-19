@@ -1,0 +1,16 @@
+{
+  "component_id": "q3_philippines_life_insurance",
+  "mode": "q3_philippines",
+  "market_id": "philippines_life_insurance",
+  "display_name": "Q3 Philippines Life Insurance",
+  "config_path": "../../localized_bots/configs/philippines_life_insurance.json",
+  "kb_path": "../../../data/q3_kb/philippines_life_insurance.jsonl",
+  "action_kb_path": "../../../data/q3_action_kb_v2/philippines_life_insurance_actions.jsonl",
+  "response_register_options": [
+    {"value": "auto", "label": "Auto"},
+    {"value": "taglish", "label": "Taglish"},
+    {"value": "filipino", "label": "Filipino/Tagalog"},
+    {"value": "english", "label": "English"}
+  ],
+  "default_response_register": "taglish"
+}

@@ -1,0 +1,16 @@
+{
+  "component_id": "q3_indonesia_consumer_finance",
+  "mode": "q3_indonesia",
+  "market_id": "indonesia_consumer_finance",
+  "display_name": "Q3 Indonesia Consumer Finance",
+  "config_path": "../../localized_bots/configs/indonesia_consumer_finance.json",
+  "kb_path": "../../../data/q3_kb/indonesia_consumer_finance.jsonl",
+  "action_kb_path": "../../../data/q3_action_kb_v2/indonesia_consumer_finance_actions.jsonl",
+  "response_register_options": [
+    {"value": "auto", "label": "Auto"},
+    {"value": "formal_id", "label": "Formal Bahasa Indonesia"},
+    {"value": "colloquial_id", "label": "Colloquial Bahasa Indonesia"},
+    {"value": "regional_javanese_id", "label": "Javanese-influenced"}
+  ],
+  "default_response_register": "formal_id"
+}

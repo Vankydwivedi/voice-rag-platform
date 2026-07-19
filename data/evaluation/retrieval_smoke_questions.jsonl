@@ -1,0 +1,12 @@
+{"id":"rq_001","question":"What processing fee does Lendingkart charge for a business loan?","expected_category":"fees_and_charges","expected_sub_category":"processing_fee"}
+{"id":"rq_002","question":"What is the minimum interest rate for a Lendingkart business loan?","expected_category":"fees_and_charges","expected_sub_category":"interest_rate"}
+{"id":"rq_003","question":"What documents are required for an unsecured business loan?","expected_category":"documents","expected_sub_category":"documents_required"}
+{"id":"rq_004","question":"Can self-employed professionals apply for a Lendingkart business loan?","expected_category":"eligibility"}
+{"id":"rq_005","question":"What loan amount can a business get from Lendingkart?","expected_category":"product_overview","expected_sub_category":"loan_amount"}
+{"id":"rq_006","question":"How can I apply for a business loan online?","expected_category":"application_process"}
+{"id":"rq_007","question":"What happens if I miss an EMI payment?","expected_category":"repayment","expected_sub_category":"missed_payment"}
+{"id":"rq_008","question":"Can I foreclose or prepay my loan early?","expected_category":"repayment","expected_sub_category":"foreclosure_charge"}
+{"id":"rq_009","question":"What CIBIL score is good for a business loan?","expected_category":"credit_score","expected_sub_category":"cibil_score"}
+{"id":"rq_010","question":"Does Lendingkart ask customers to pay money upfront before loan disbursal?","expected_category":"customer_protection","expected_sub_category":"loan_fraud_advisory"}
+{"id":"rq_011","question":"How does Lendingkart handle my personal data and privacy?","expected_category":"privacy_pii","expected_sub_category":"privacy"}
+{"id":"rq_012","question":"Who are Lendingkart's co-lending partners?","expected_category":"compliance_policy","expected_sub_category":"co_lending_partners"}

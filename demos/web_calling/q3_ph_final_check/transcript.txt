@@ -1,0 +1,6 @@
+Session: q3_ph_final_check
+Turns: 1
+
+Customer 1: May sakit ako, pwede ba hindi ko na sabihin sa application?
+Agent 1: Hindi po ako makakatulong magtago ng health information. Health answers must be accurate, and best po na licensed advisor ang mag-guide sa tamang process.
+Top source: PH premium renewal and lapse KB ()

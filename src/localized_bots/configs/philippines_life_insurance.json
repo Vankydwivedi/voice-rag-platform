@@ -1,0 +1,101 @@
+{
+  "market_id": "philippines_life_insurance",
+  "country": "Philippines",
+  "sector": "life_insurance_bancassurance",
+  "use_case": "renewal_and_lead_qualification",
+  "bot_name": "Maya",
+  "languages_supported": [
+    "English",
+    "Filipino/Tagalog",
+    "Taglish"
+  ],
+  "default_response_register": "taglish",
+  "response_register_overrides": {
+    "english": "taglish"
+  },
+  "asr_config": {
+    "provider": "transcript_file",
+    "model": "transcript_file_v0",
+    "language_tests": [
+      "en-PH",
+      "fil-PH",
+      "taglish"
+    ],
+    "notes": "Offline transcript-file ASR is used for deterministic assessment runs. Production should use multilingual ASR with English and Filipino/Tagalog code-switching enabled."
+  },
+  "tts_config": {
+    "provider": "windows_sapi",
+    "preferred_voice": "Filipino or Philippine English voice if installed",
+    "compromise": "Windows SAPI may fall back to the default installed voice; response text and WAV are still generated for demo evidence."
+  },
+  "terminology": {
+    "premium": ["premium", "hulog", "bayad sa policy"],
+    "policy": ["policy", "insurance policy", "polisa"],
+    "beneficiary": ["beneficiary", "benepisyaryo", "tatanggap ng benefit"],
+    "rider": ["rider", "add-on benefit", "dagdag coverage"],
+    "lapse": ["lapse", "ma-lapse", "maputol ang coverage"],
+    "coverage": ["coverage", "proteksyon", "sakop ng insurance"],
+    "bank_referral": ["bank referral", "referred by the bank", "galing sa bank partner"]
+  },
+  "language_markers": {
+    "english": ["premium", "policy", "coverage", "beneficiary", "rider", "bank", "referral"],
+    "filipino": ["bayad", "hulog", "sakop", "benepisyaryo", "mahal", "hindi", "pwede", "kailangan", "ako", "asawa", "yung", "mamaya", "tawag"],
+    "taglish": ["po", "opo", "naman", "pwede", "gusto"]
+  },
+  "intent_keywords": {
+    "renewal_reminder": ["renewal", "renew", "premium", "due", "bayad", "hulog", "lapse", "ma-lapse"],
+    "lead_qualification": ["interested", "quote", "coverage", "family", "beneficiary", "rider", "bank referral", "referred"],
+    "price_objection": ["mahal", "expensive", "too much", "wala budget", "kulang budget"],
+    "busy_later": ["busy", "later", "mamaya", "next time", "tawag ulit"],
+    "human_escalation": ["agent", "advisor", "human", "tao", "representative", "financial advisor"]
+  },
+  "responses": {
+    "renewal_reminder": {
+      "taglish": "Opo, noted po. Para active pa rin ang policy, kailangan mabayaran ang premium bago ang due date. Para hindi ma-lapse ang coverage, tutulungan ko po kayong i-check ang amount at payment option.",
+      "filipino": "Opo. Para manatiling active ang policy, kailangan mabayaran ang premium bago ang due date. Matutulungan ko po kayong i-check ang amount at payment option.",
+      "english": "Yes. To keep the policy active, the premium should be paid before the due date. I can help confirm the amount and payment option."
+    },
+    "lead_qualification": {
+      "taglish": "Sige po. Para ma-check ang tamang coverage, ito po ba ay for yourself, family protection, o pagdagdag ng beneficiary or rider?",
+      "filipino": "Sige po. Para malaman ang tamang coverage, ito po ba ay para sa sarili, family protection, o pagdagdag ng benepisyaryo o rider?",
+      "english": "Sure. To check the right coverage, is this for yourself, family protection, or adding a beneficiary or rider?"
+    },
+    "price_objection": {
+      "taglish": "Gets ko po na importante ang budget. Pwede nating tingnan ang lower premium option o i-adjust ang riders para sakto pa rin ang coverage.",
+      "filipino": "Naiintindihan ko po na importante ang budget. Pwede nating tingnan ang mas mababang premium o bawasan ang riders habang may coverage pa rin.",
+      "english": "I understand budget matters. We can review a lower premium option or adjust riders while keeping useful coverage."
+    },
+    "busy_later": {
+      "taglish": "No problem po. I can schedule a callback. Anong oras po mas convenient?",
+      "filipino": "Walang problema po. Pwede tayong mag-schedule ng callback. Anong oras po kayo available?",
+      "english": "No problem. I can schedule a callback. What time is convenient?"
+    },
+    "human_escalation": {
+      "taglish": "Opo, i-connect ko po kayo sa licensed advisor para maayos na masagot ang policy at coverage questions ninyo.",
+      "filipino": "Opo, ikokonekta ko kayo sa licensed advisor para maayos na masagot ang policy at coverage questions ninyo.",
+      "english": "Yes, I can connect you with a licensed advisor for policy and coverage questions."
+    },
+    "fallback": {
+      "taglish": "Pasensya na po, ayokong manghula. Pwede ko kayong i-connect sa advisor, o magtanong po kayo tungkol sa premium, policy, beneficiary, rider, lapse, o coverage.",
+      "filipino": "Pasensya na po, ayokong manghula. Pwede ko kayong i-connect sa advisor, o magtanong po kayo tungkol sa premium, policy, benepisyaryo, rider, lapse, o coverage.",
+      "english": "Sorry, I do not want to guess. I can connect you to an advisor, or you can ask about premium, policy, beneficiary, rider, lapse, or coverage."
+    }
+  },
+  "localization_examples": [
+    {
+      "literal_translation": "Your policy will lapse if you do not pay.",
+      "localized": "Para hindi ma-lapse ang coverage, kailangan po mabayaran ang premium before the due date.",
+      "why": "Uses common Taglish insurance phrasing and softens the warning with polite 'po'."
+    },
+    {
+      "literal_translation": "Do you want to add a rider?",
+      "localized": "Gusto niyo po bang magdagdag ng rider, like extra coverage for accident or critical illness?",
+      "why": "Keeps 'rider' in English and explains it naturally."
+    },
+    {
+      "literal_translation": "You were referred by the bank.",
+      "localized": "Nakita ko po na galing ito sa bank referral, so I can explain the coverage options connected to that offer.",
+      "why": "Uses bank referral as a familiar bancassurance phrase."
+    }
+  ]
+}

@@ -1,0 +1,420 @@
+{
+  "allowlist_version": "lendingkart_cleaning_sources_v0.1",
+  "created_date": "2026-07-18",
+  "provider": "lendingkart",
+  "business_domain": "business_loans",
+  "country": "india",
+  "purpose": "Restrict the cleaning and KB-building pipeline to approved Lendingkart business-loan sources only.",
+  "read_policy": {
+    "mode": "explicit_allowlist_only",
+    "exclude_unlisted_files": true,
+    "exclude_other_provider_files": true,
+    "do_not_use_archive_only_documents_for_customer_answers": true
+  },
+  "allowed_web_sources": [
+    {
+      "source_id": "lendingkart_business_loan_overview",
+      "source_url": "https://www.lendingkart.com/business-loans/",
+      "cleaned_file": "data/cleaned/lendingkart_business_loan_overview.txt",
+      "raw_file": "data/raw/lendingkart_business_loan_overview.html",
+      "category": "product_overview",
+      "priority": "high",
+      "use": "Core product facts, benefits, collateral-free positioning, amount, turnover, and document overview."
+    },
+    {
+      "source_id": "lendingkart_check_eligibility_form",
+      "source_url": "https://www.lendingkart.com/business-loan/check-eligibility",
+      "cleaned_file": "data/cleaned/lendingkart_check_eligibility_form.txt",
+      "raw_file": "data/raw/lendingkart_check_eligibility_form.html",
+      "category": "application_process",
+      "priority": "high",
+      "use": "Application flow, form-field normalization, eligibility-check steps, document upload steps, and consent text."
+    },
+    {
+      "source_id": "lendingkart_eligibility_requirements",
+      "source_url": "https://www.lendingkart.com/business-loans/eligibility-and-requirements/",
+      "cleaned_file": "data/cleaned/lendingkart_eligibility_requirements.txt",
+      "raw_file": "data/raw/lendingkart_eligibility_requirements.html",
+      "category": "eligibility",
+      "priority": "high",
+      "use": "Eligibility criteria, entity types, age, income, business vintage, and document context."
+    },
+    {
+      "source_id": "lendingkart_interest_rate_charges",
+      "source_url": "https://www.lendingkart.com/business-loans/interest-rate-charges/",
+      "cleaned_file": "data/cleaned/lendingkart_interest_rate_charges.txt",
+      "raw_file": "data/raw/lendingkart_interest_rate_charges.html",
+      "category": "fees_and_charges",
+      "priority": "high",
+      "use": "Interest rate, amount, tenure, processing charge, sanction time, and turnover context."
+    },
+    {
+      "source_id": "lendingkart_schedule_of_charges",
+      "source_url": "https://www.lendingkart.com/legal-compliance/schedule-of-charges/",
+      "cleaned_file": "data/cleaned/lendingkart_schedule_of_charges.txt",
+      "raw_file": "data/raw/lendingkart_schedule_of_charges.html",
+      "category": "fees_and_charges",
+      "priority": "high",
+      "use": "Highest-priority source for official fees and charges."
+    },
+    {
+      "source_id": "lendingkart_faq_hub",
+      "source_url": "https://www.lendingkart.com/faqs/",
+      "cleaned_file": "data/cleaned/lendingkart_faq_hub.txt",
+      "raw_file": "data/raw/lendingkart_faq_hub.html",
+      "category": "faq",
+      "priority": "medium",
+      "use": "FAQ navigation and coverage hints only. Do not treat as a stronger source than individual FAQ pages."
+    },
+    {
+      "source_id": "lendingkart_faq_businesses_qualify",
+      "source_url": "https://www.lendingkart.com/faqs/what-businesses-qualify-for-a-business-loan-at-lendingkart/",
+      "cleaned_file": "data/cleaned/lendingkart_faq_businesses_qualify.txt",
+      "raw_file": "data/raw/lendingkart_faq_businesses_qualify.html",
+      "category": "eligibility",
+      "priority": "high",
+      "use": "Business qualification FAQ."
+    },
+    {
+      "source_id": "lendingkart_faq_documents_unsecured",
+      "source_url": "https://www.lendingkart.com/faqs/what-documents-are-required-for-an-unsecured-business-loan/",
+      "cleaned_file": "data/cleaned/lendingkart_faq_documents_unsecured.txt",
+      "raw_file": "data/raw/lendingkart_faq_documents_unsecured.html",
+      "category": "documents",
+      "priority": "high",
+      "use": "Document requirements FAQ."
+    },
+    {
+      "source_id": "lendingkart_faq_application_online",
+      "source_url": "https://www.lendingkart.com/faqs/how-can-i-apply-for-a-business-loan-online-2/",
+      "cleaned_file": "data/cleaned/lendingkart_faq_application_online.txt",
+      "raw_file": "data/raw/lendingkart_faq_application_online.html",
+      "category": "application_process",
+      "priority": "high",
+      "use": "Online application FAQ."
+    },
+    {
+      "source_id": "lendingkart_faq_application_fees",
+      "source_url": "https://www.lendingkart.com/faqs/are-there-any-fees-when-applying-for-a-business-loan/",
+      "cleaned_file": "data/cleaned/lendingkart_faq_application_fees.txt",
+      "raw_file": "data/raw/lendingkart_faq_application_fees.html",
+      "category": "fees_and_charges",
+      "priority": "high",
+      "use": "Application fee FAQ. Keep separate from official schedule because fee values can conflict."
+    },
+    {
+      "source_id": "lendingkart_faq_hidden_charges",
+      "source_url": "https://www.lendingkart.com/faqs/are-there-any-hidden-charges-on-the-loan/",
+      "cleaned_file": "data/cleaned/lendingkart_faq_hidden_charges.txt",
+      "raw_file": "data/raw/lendingkart_faq_hidden_charges.html",
+      "category": "fees_and_charges",
+      "priority": "high",
+      "use": "Hidden charges FAQ and objection handling."
+    },
+    {
+      "source_id": "lendingkart_faq_interest_rate_min_max",
+      "source_url": "https://www.lendingkart.com/faqs/what-is-the-minimum-and-maximum-interest-rate-charged-by-lendingkart/",
+      "cleaned_file": "data/cleaned/lendingkart_faq_interest_rate_min_max.txt",
+      "raw_file": "data/raw/lendingkart_faq_interest_rate_min_max.html",
+      "category": "fees_and_charges",
+      "priority": "high",
+      "use": "Interest-rate FAQ."
+    },
+    {
+      "source_id": "lendingkart_faq_benefits",
+      "source_url": "https://www.lendingkart.com/faqs/are-there-any-benefits-of-taking-a-business-loan-from-lendingkart-2/",
+      "cleaned_file": "data/cleaned/lendingkart_faq_benefits.txt",
+      "raw_file": "data/raw/lendingkart_faq_benefits.html",
+      "category": "objection_handling",
+      "priority": "medium",
+      "use": "Benefits, fast process, no collateral, and no hidden charges."
+    },
+    {
+      "source_id": "lendingkart_faq_self_employed_professionals",
+      "source_url": "https://www.lendingkart.com/faqs/can-self-employed-professionals-apply-for-a-lendingkart-business-loan/",
+      "cleaned_file": "data/cleaned/lendingkart_faq_self_employed_professionals.txt",
+      "raw_file": "data/raw/lendingkart_faq_self_employed_professionals.html",
+      "category": "eligibility",
+      "priority": "medium",
+      "use": "Self-employed professionals and MSME applicant coverage."
+    },
+    {
+      "source_id": "lendingkart_emi_calculator",
+      "source_url": "https://www.lendingkart.com/business-loan-emi-calculator/",
+      "cleaned_file": "data/cleaned/lendingkart_emi_calculator.txt",
+      "raw_file": "data/raw/lendingkart_emi_calculator.html",
+      "category": "repayment",
+      "priority": "medium",
+      "use": "EMI concepts, formula, factors affecting EMI, missed EMI context, and repayment planning."
+    },
+    {
+      "source_id": "lendingkart_term_loan",
+      "source_url": "https://www.lendingkart.com/business-loans/term-loan/",
+      "cleaned_file": "data/cleaned/lendingkart_term_loan.txt",
+      "raw_file": "data/raw/lendingkart_term_loan.html",
+      "category": "product_variant",
+      "priority": "medium",
+      "use": "Term loan and working-capital narrative. Use carefully because it mixes general industry information with Lendingkart claims."
+    },
+    {
+      "source_id": "lendingkart_types_of_business_loans",
+      "source_url": "https://www.lendingkart.com/business-loans/types-of-business-loans/",
+      "cleaned_file": "data/cleaned/lendingkart_types_of_business_loans.txt",
+      "raw_file": "data/raw/lendingkart_types_of_business_loans.html",
+      "category": "product_taxonomy",
+      "priority": "medium",
+      "use": "Business loan types, working capital explanation, term loan explanation, and collateral-free business loan row."
+    },
+    {
+      "source_id": "lendingkart_repayment_guide",
+      "source_url": "https://www.lendingkart.com/blog/business-loan-repayment-guide/",
+      "cleaned_file": "data/cleaned/lendingkart_repayment_guide.txt",
+      "raw_file": "data/raw/lendingkart_repayment_guide.html",
+      "category": "repayment",
+      "priority": "medium",
+      "use": "Repayment planning, missed payment/default consequences, and repayment best practices."
+    },
+    {
+      "source_id": "lendingkart_cibil_business_loan",
+      "source_url": "https://www.lendingkart.com/blog/cibil-score-for-business-loan/",
+      "cleaned_file": "data/cleaned/lendingkart_cibil_business_loan.txt",
+      "raw_file": "data/raw/lendingkart_cibil_business_loan.html",
+      "category": "credit_score",
+      "priority": "medium",
+      "use": "CIBIL score guidance and educational credit-score chunks."
+    },
+    {
+      "source_id": "lendingkart_general_terms_conditions",
+      "source_url": "https://www.lendingkart.com/legal-compliance/general-terms-and-conditions/",
+      "cleaned_file": "data/cleaned/lendingkart_general_terms_conditions.txt",
+      "raw_file": "data/raw/lendingkart_general_terms_conditions.html",
+      "category": "terms",
+      "priority": "low",
+      "use": "Limited compliance fallback only. Do not use for sales or qualification answers unless a matching legal term is required."
+    },
+    {
+      "source_id": "lendingkart_privacy_policy",
+      "source_url": "https://www.lendingkart.com/legal-compliance/privacy-policy/",
+      "cleaned_file": "data/cleaned/lendingkart_privacy_policy.txt",
+      "raw_file": "data/raw/lendingkart_privacy_policy.html",
+      "category": "privacy_pii",
+      "priority": "medium",
+      "use": "PII and privacy-policy chunks only."
+    },
+    {
+      "source_id": "lendingkart_regulatory_disclosures",
+      "source_url": "https://www.lendingkart.com/legal-compliance/regulatory/",
+      "cleaned_file": "data/cleaned/lendingkart_regulatory_disclosures.txt",
+      "raw_file": "data/raw/lendingkart_regulatory_disclosures.html",
+      "category": "compliance",
+      "priority": "medium",
+      "use": "Regulatory-document discovery and compliance routing only. Page text is thin."
+    },
+    {
+      "source_id": "lendingkart_loan_fraud_advisory",
+      "source_url": "https://www.lendingkart.com/legal-compliance/loan-fraud-advisory/",
+      "cleaned_file": "data/cleaned/lendingkart_loan_fraud_advisory.txt",
+      "raw_file": "data/raw/lendingkart_loan_fraud_advisory.html",
+      "category": "fraud_advisory",
+      "priority": "medium",
+      "use": "Fraud-advisory landing page. Prefer the downloaded PDF for actual fraud guidance."
+    }
+  ],
+  "allowed_tables": [
+    {
+      "table_id": "lendingkart_business_loan_overview_table_01",
+      "file_path": "data/raw/tables/lendingkart_business_loan_overview_table_01.csv",
+      "source_id": "lendingkart_business_loan_overview",
+      "category": "product_overview",
+      "priority": "high",
+      "use": "Product snapshot: interest, processing fee, tenure, pre-closure, turnover, amount, instalments, penal charges.",
+      "warnings": ["Normalize garbled rupee symbols before KB generation."]
+    },
+    {
+      "table_id": "lendingkart_eligibility_requirements_table_01",
+      "file_path": "data/raw/tables/lendingkart_eligibility_requirements_table_01.csv",
+      "source_id": "lendingkart_eligibility_requirements",
+      "category": "eligibility",
+      "priority": "high",
+      "use": "Entity-wise eligibility and general age/profitability criteria.",
+      "warnings": []
+    },
+    {
+      "table_id": "lendingkart_interest_rate_charges_table_01",
+      "file_path": "data/raw/tables/lendingkart_interest_rate_charges_table_01.csv",
+      "source_id": "lendingkart_interest_rate_charges",
+      "category": "fees_and_charges",
+      "priority": "high",
+      "use": "Interest, tenure, collateral, loan amount, processing charge, sanction timeline, and turnover.",
+      "warnings": ["Processing fee and loan amount values conflict with some other sources; preserve source context."]
+    },
+    {
+      "table_id": "lendingkart_schedule_of_charges_table_01",
+      "file_path": "data/raw/tables/lendingkart_schedule_of_charges_table_01.csv",
+      "source_id": "lendingkart_schedule_of_charges",
+      "category": "fees_and_charges",
+      "priority": "highest",
+      "use": "Official detailed fees and charges. Prefer this table for charge-specific answers.",
+      "warnings": []
+    },
+    {
+      "table_id": "lendingkart_types_of_business_loans_table_01",
+      "file_path": "data/raw/tables/lendingkart_types_of_business_loans_table_01.csv",
+      "source_id": "lendingkart_types_of_business_loans",
+      "category": "product_taxonomy",
+      "priority": "medium",
+      "use": "Collateral-free business-loan summary row.",
+      "warnings": ["Thin single-row table; lower priority than schedule of charges and core overview."]
+    },
+    {
+      "table_id": "lendingkart_cibil_business_loan_table_01",
+      "file_path": "data/raw/tables/lendingkart_cibil_business_loan_table_01.csv",
+      "source_id": "lendingkart_cibil_business_loan",
+      "category": "credit_score",
+      "priority": "medium",
+      "use": "CIBIL score bands and meanings.",
+      "warnings": []
+    },
+    {
+      "table_id": "lendingkart_cibil_business_loan_table_02",
+      "file_path": "data/raw/tables/lendingkart_cibil_business_loan_table_02.csv",
+      "source_id": "lendingkart_cibil_business_loan",
+      "category": "credit_score",
+      "priority": "low",
+      "use": "Credit-factor weightage only if reviewed.",
+      "warnings": ["Values appear to total 105 percent. Mark as needs_review before customer-facing use."]
+    }
+  ],
+  "allowed_documents": [
+    {
+      "document_id": "doc_a1560d24c151",
+      "source_id": "lendingkart_loan_fraud_advisory",
+      "source_url": "https://www.lendingkart.com/legal-compliance/loan-fraud-advisory/",
+      "cleaned_file": "data/cleaned/documents/Loan_Fraud_Advisory__a1560d24c151.txt",
+      "raw_file": "data/raw/documents/Loan_Fraud_Advisory__a1560d24c151.pdf",
+      "category": "customer_protection",
+      "priority": "high",
+      "use": "Fraud advisory, suspicious calls, fake websites, and safe sharing/payment guidance."
+    },
+    {
+      "document_id": "doc_7182bf26c008",
+      "source_id": "lendingkart_interest_penalty_policy",
+      "source_url": "https://media.lendingkart.com/wp-content/uploads/2026/06/Policy-on-Interest-Rate-Penalties-and-Other-Charges_website_version_v20260616.docx.pdf",
+      "cleaned_file": "data/cleaned/documents/Policy-on-Interest-Rate-Penalties-and-Other-Charges_website_version_v20260616.docx__7182bf26c008.txt",
+      "raw_file": "data/raw/documents/Policy-on-Interest-Rate-Penalties-and-Other-Charges_website_version_v20260616.docx__7182bf26c008.pdf",
+      "category": "fees_and_charges",
+      "priority": "high",
+      "use": "Interest-rate, penalty, documentation charge, borrower risk bucket, and charges-policy evidence."
+    },
+    {
+      "document_id": "doc_794a71560f5d",
+      "source_id": "lendingkart_operational_risk_policy",
+      "source_url": "https://media.lendingkart.com/wp-content/uploads/2026/01/Operational-Risk-and-Operational-Resilience-Document-with-Updated-Date.pdf",
+      "cleaned_file": "data/cleaned/documents/Operational-Risk-and-Operational-Resilience-Document-with-Updated-Date__794a71560f5d.txt",
+      "raw_file": "data/raw/documents/Operational-Risk-and-Operational-Resilience-Document-with-Updated-Date__794a71560f5d.pdf",
+      "category": "compliance_policy",
+      "priority": "medium",
+      "use": "Operational risk and resilience compliance chunks only."
+    },
+    {
+      "document_id": "doc_a5fec489a2a4",
+      "source_id": "lendingkart_restructuring_policy_addendum",
+      "source_url": "https://media.lendingkart.com/wp-content/uploads/2025/11/Addendum-to-Policy-for-Restructuring-of-Advances-3.pdf",
+      "cleaned_file": "data/cleaned/documents/Addendum-to-Policy-for-Restructuring-of-Advances-3__a5fec489a2a4.txt",
+      "raw_file": "data/raw/documents/Addendum-to-Policy-for-Restructuring-of-Advances-3__a5fec489a2a4.pdf",
+      "category": "compliance_policy",
+      "priority": "medium",
+      "use": "Restructuring policy addendum chunks."
+    },
+    {
+      "document_id": "doc_889a8e6509ac",
+      "source_id": "lendingkart_trade_relief_moratorium_policy",
+      "source_url": "https://media.lendingkart.com/wp-content/uploads/2026/01/Trade-relief-Moratorium-Policy-Website.pdf",
+      "cleaned_file": "data/cleaned/documents/Trade-relief-Moratorium-Policy-Website__889a8e6509ac.txt",
+      "raw_file": "data/raw/documents/Trade-relief-Moratorium-Policy-Website__889a8e6509ac.pdf",
+      "category": "compliance_policy",
+      "priority": "medium",
+      "use": "Moratorium and assessment/documentation requirements for eligible cases."
+    },
+    {
+      "document_id": "doc_b8271a54e5d3",
+      "source_id": "lendingkart_colending_partners",
+      "source_url": "https://media.lendingkart.com/wp-content/uploads/2026/07/List-of-Active-Colending-Partners-1.pdf",
+      "cleaned_file": "data/cleaned/documents/List-of-Active-Colending-Partners-1__b8271a54e5d3.txt",
+      "raw_file": "data/raw/documents/List-of-Active-Colending-Partners-1__b8271a54e5d3.pdf",
+      "category": "compliance_policy",
+      "priority": "medium",
+      "use": "Co-lending partner disclosure."
+    }
+  ],
+  "excluded_source_ids": [
+    {
+      "source_id": "lendingkart_homepage",
+      "reason_code": "thin_extraction",
+      "reason": "Homepage extraction is too thin and mostly navigation/positioning. Use product pages, FAQ pages, tables, and approved PDFs instead."
+    }
+  ],
+  "excluded_file_patterns": [
+    "data/cleaned/hdfc_*.txt",
+    "data/raw/hdfc_*.html",
+    "data/cleaned/documents/*Annual-Report*.txt",
+    "data/cleaned/documents/*AGM*.txt",
+    "data/cleaned/documents/*EGM*.txt",
+    "data/cleaned/documents/*MGT*.txt",
+    "data/cleaned/documents/*CSR-Policy*.txt",
+    "data/raw/documents/*Annual-Report*.pdf",
+    "data/raw/documents/*AGM*.pdf",
+    "data/raw/documents/*EGM*.pdf",
+    "data/raw/documents/*MGT*.pdf",
+    "data/raw/documents/*CSR-Policy*.pdf"
+  ],
+  "excluded_reason_codes": {
+    "other_provider": "Source belongs to HDFC or another provider and must not mix into Lendingkart KB.",
+    "archive_only": "Corporate archive, annual return, AGM, EGM, CSR, or shareholder document not useful for customer loan answers.",
+    "external_domain": "Document is linked from an external non-Lendingkart domain.",
+    "zero_text_pdf": "PDF downloaded but produced no extractable text.",
+    "thin_extraction": "Source text is too thin for direct KB use unless a linked PDF/table is approved.",
+    "navigation_or_blog_noise": "Repeated navigation, related posts, recent posts, trending posts, newsletter, or category text."
+  },
+  "known_zero_text_documents": [
+    "LTPL_Notice-of-11th-AGM.pdf",
+    "Notice-of-Annual-General-Meeting-LTPL-1.pdf",
+    "Annual-Report-2019.pdf"
+  ],
+  "known_external_documents": [
+    "https://www.csb.bank.in/pdf/CKYC_Banner_08042024.pdf"
+  ],
+  "noise_blocks_to_remove": [
+    "Home",
+    "Blogs",
+    "Related Posts",
+    "Recent Posts",
+    "Trending Posts",
+    "Categories",
+    "Subscribe To Our Newsletter",
+    "Apply for Business Loan",
+    "Apply for Business Loan Now",
+    "Lodge a Complaint"
+  ],
+  "normalization_rules": {
+    "currency": "Normalize garbled rupee symbols, Rs., and INR variants to INR.",
+    "provider_name": "Normalize LendingKart and Lending Kart to Lendingkart.",
+    "dates": "Convert clear publication or extraction dates to ISO date where possible.",
+    "headings": "Use title-case headings and taxonomy-safe category labels.",
+    "form_fields": "Normalize form fields to snake_case such as mobile_number, pan_number, business_type, monthly_sales, business_age, loan_amount, city, consent, and documents_required."
+  },
+  "pii_policy": {
+    "mask_customer_pii": true,
+    "patterns_to_mask": [
+      "phone_number",
+      "email",
+      "pan",
+      "aadhaar",
+      "bank_account_number",
+      "ifsc",
+      "gstin",
+      "personal_address"
+    ],
+    "allowed_public_information": "Official company websites, official public policy URLs, public corporate names, and public compliance disclosures may remain if useful."
+  }
+}

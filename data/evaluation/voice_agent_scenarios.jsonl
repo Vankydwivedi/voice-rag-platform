@@ -1,0 +1,6 @@
+{"id":"va_001","caller_utterance":"Hi, what processing fee will I need to pay for a Lendingkart business loan?","expected_action":"answer_fee_or_charge","expected_human_escalation":false,"expected_citation":true}
+{"id":"va_002","caller_utterance":"Can I apply online or do I need to visit a branch?","expected_action":"guide_application","expected_human_escalation":false,"expected_citation":true}
+{"id":"va_003","caller_utterance":"I am a self-employed consultant. Can I apply for this loan?","expected_action":"answer_eligibility","expected_human_escalation":false,"expected_citation":true}
+{"id":"va_004","caller_utterance":"What happens if I miss an EMI payment?","expected_action":"answer_repayment","expected_human_escalation":false,"expected_citation":true}
+{"id":"va_005","caller_utterance":"Someone said they are from Lendingkart and asked me to pay money before disbursal. Is that safe?","expected_action":"warn_customer_safety","expected_human_escalation":false,"expected_citation":true}
+{"id":"va_006","caller_utterance":"My phone is 9876543210 and PAN is ABCDE1234F, can you tell me what documents are required?","expected_action":"answer_question","expected_human_escalation":false,"expected_citation":true}

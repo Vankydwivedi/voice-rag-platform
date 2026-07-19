@@ -1,0 +1,48 @@
+{
+  "dataset_path": "C:\\Users\\dwive\\Documents\\Codex\\2026-07-17\\can-an\\work\\hdfc_kb_scraper\\data\\evaluation\\q3_conversational_response_db.jsonl",
+  "generated_at_utc": "2026-07-18T18:02:41.943943+00:00",
+  "markets": {
+    "indonesia": {
+      "action_counts": {
+        "escalate_to_human": 30,
+        "explain_penalty_or_due_date": 13,
+        "handle_finance_qualification": 34,
+        "handle_installment_reminder": 27,
+        "offer_payment_support": 16
+      },
+      "category_counts": {
+        "colloquial_speech": 15,
+        "compliance_sensitive_fallback": 15,
+        "cooperative_customer": 15,
+        "human_escalation": 15,
+        "mixed_english_finance_terms": 15,
+        "payment_or_renewal_difficulty": 15,
+        "regional_accent": 15,
+        "sector_specific_objection": 15
+      },
+      "path": "C:\\Users\\dwive\\Documents\\Codex\\2026-07-17\\can-an\\work\\hdfc_kb_scraper\\data\\q3_action_kb_v2\\indonesia_consumer_finance_actions.jsonl",
+      "record_count": 120
+    },
+    "philippines": {
+      "action_counts": {
+        "escalate_to_human": 30,
+        "handle_renewal_or_premium": 31,
+        "handle_sector_objection": 21,
+        "qualify_life_insurance_lead": 38
+      },
+      "category_counts": {
+        "colloquial_speech": 15,
+        "compliance_sensitive_fallback": 15,
+        "cooperative_customer": 15,
+        "human_escalation": 15,
+        "mixed_english_finance_terms": 15,
+        "payment_or_renewal_difficulty": 15,
+        "regional_accent": 15,
+        "sector_specific_objection": 15
+      },
+      "path": "C:\\Users\\dwive\\Documents\\Codex\\2026-07-17\\can-an\\work\\hdfc_kb_scraper\\data\\q3_action_kb_v2\\philippines_life_insurance_actions.jsonl",
+      "record_count": 120
+    }
+  },
+  "output_dir": "C:\\Users\\dwive\\Documents\\Codex\\2026-07-17\\can-an\\work\\hdfc_kb_scraper\\data\\q3_action_kb_v2"
+}
